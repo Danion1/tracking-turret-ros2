@@ -1,0 +1,15 @@
+{
+  "_fonte": "GERADO por cad/gerar_urdf.py; lido pelo launch (nascimento) e pelo scripts/simular_volantes.py",
+  "massa_kg": 0.00102,
+  "comprimento_m": 0.0734,
+  "raio_volante_m": 0.018,
+  "x_toque_m": 0.057417495466536135,
+  "x_ponta_inicial_m": 0.0449,
+  "nascimento_xyz_m": [
+    0.008200000000000002,
+    0.0,
+    0.16296277122043676
+  ],
+  "link": "dardo::corpo",
+  "mundo": "torreta"
+}

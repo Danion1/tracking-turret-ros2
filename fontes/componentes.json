@@ -1,0 +1,1785 @@
+{
+ "_meta": {
+  "gerado_em": "2026-11-05",
+  "observacao": "valores null = não publicado ou não conferido; ver FONTES.md",
+  "tipos": "datasheet | loja | medição publicada | dedução | referência cruzada (modelo CAD de terceiros)"
+ },
+ "feetech_sts3215_c001": {
+  "modelo": {
+   "valor": "STS3215 (7,4 V, 19,5 kg.cm, 1/345)",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); capa: '7.4V 19KG.CM plastic shell metal tooth magnetic coding dual-axis TTL serial servo'",
+   "tipo": "datasheet"
+  },
+  "caixa_mm": {
+   "valor": [
+    45.23,
+    24.73,
+    35.0
+   ],
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9 Outside Dimension: cotas 45.23 x 24.73; altura 35 (tabela 6-1: '45.2X24.7X35')",
+   "tipo": "datasheet"
+  },
+  "altura_corpo_lado_eixo_mm": {
+   "valor": 29.0,
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9, vista lateral: cota '29' (face de cima do corpo até a face de baixo, na região do eixo)",
+   "tipo": "datasheet"
+  },
+  "altura_degraus_mm": {
+   "valor": [
+    32.0,
+    35.0
+   ],
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9, vista lateral: cotas '32' e '35' na parte traseira (tampa em degrau); a que superfície cada uma vai não está clara no desenho",
+   "tipo": "datasheet"
+  },
+  "eixo_ao_centro_da_caixa_mm": {
+   "valor": 12.5,
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: cota '12.5' do eixo até a linha de centro da caixa; confirmado pelo STEP do SO-ARM100 (eixo em x=+12,5 com origem no centro)",
+   "tipo": "datasheet"
+  },
+  "eixo_a_face_frontal_mm": {
+   "valor": 10.11,
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "45,23/2 - 12,5",
+   "tipo": "dedução"
+  },
+  "eixo_centrado_na_largura": {
+   "valor": true,
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: eixo sobre a linha de centro (vermelha) da largura 24.73",
+   "tipo": "datasheet"
+  },
+  "estria_saida_projecao_mm": {
+   "valor": 3.4,
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: cota '3.4' acima da face de cima",
+   "tipo": "datasheet"
+  },
+  "eixo_passivo_projecao_mm": {
+   "valor": 4.1,
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: cota '4.1' abaixo da face de baixo; 3,4 + 29 + 4,1 = 36,5 (cota total '36.5') fecha",
+   "tipo": "datasheet"
+  },
+  "altura_total_estria_a_eixo_passivo_mm": {
+   "valor": 36.5,
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: cota '36.5'",
+   "tipo": "datasheet"
+  },
+  "estria": {
+   "valor": {
+    "dentes": 25,
+    "diametro_externo_mm": 5.9
+   },
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-9 Output shaft Horn Type: '25T/OD5.9mm'; desenho: '25T 输出齿'",
+   "tipo": "datasheet"
+  },
+  "eixo_passivo_diametro_mm": {
+   "valor": 6.0,
+   "unidade": "mm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9, vista de baixo: 'Ø6'",
+   "tipo": "datasheet"
+  },
+  "parafuso_horn": {
+   "valor": "M3x6",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-13 The rocker screw: 'M3X6'; desenho: 'M3X6 机牙螺丝' (parafuso de máquina) apontando o centro do eixo",
+   "tipo": "datasheet"
+  },
+  "parafusos_da_caixa": {
+   "valor": [
+    "B-PA2.0 autoatarraxante (cantos, tampa de cima)",
+    "PA3.0x5 autoatarraxante (tampa de baixo)"
+   ],
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: 'B-PA2.0 自攻螺丝' e 'PA3.0X5 的自攻螺丝'",
+   "tipo": "datasheet"
+  },
+  "abas_de_fixacao": {
+   "valor": false,
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: a caixa não tem abas laterais (diferente do SCS0009); fixação por furos nas faces de cima e de baixo",
+   "tipo": "datasheet"
+  },
+  "furos_fixacao_posicoes_mm": {
+   "valor": {
+    "origem": "centro da caixa (eixo de saída em x=+12,5)",
+    "y_mm": [
+     -10.25,
+     10.25
+    ],
+    "x_face_cima_mm": [
+     4.2,
+     -16.5
+    ],
+    "x_face_baixo_mm": [
+     4.2,
+     -20.3
+    ],
+    "furo_piloto_d_mm": 1.5,
+    "rebaixo_d_mm": 4.2
+   },
+   "unidade": "mm",
+   "fonte": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step",
+   "item": "STS3215_03a.step (SO-ARM100, Apache-2.0): faces cilíndricas de Ø1,5 e Ø4,2 nas faces z=±14,4..15,9",
+   "tipo": "referência cruzada (modelo CAD de terceiros)"
+  },
+  "furos_fixacao_rosca": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "o desenho da Feetech não cota os furos de fixação nem a rosca; conferência manual (medir peça ou desenho 2D da Feetech)",
+   "tipo": "datasheet"
+  },
+  "massa_g": {
+   "valor": 55.0,
+   "unidade": "g",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-8 The Weight: '55±1g'",
+   "tipo": "datasheet"
+  },
+  "tensao_faixa_v": {
+   "valor": [
+    4.0,
+    7.4
+   ],
+   "unidade": "V",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-7 Working Voltage: '4V-7.4V'",
+   "tipo": "datasheet"
+  },
+  "torque_stall_7v4_kgfcm": {
+   "valor": 19.5,
+   "unidade": "kgf.cm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-4 Stall Torque @7.4V: '19.5kg.cm'",
+   "tipo": "datasheet",
+   "valor_nm": 1.912
+  },
+  "torque_stall_6v_kgfcm": {
+   "valor": 16.5,
+   "unidade": "kgf.cm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-4 Stall Torque @6V: '16.5kg.cm'",
+   "tipo": "datasheet",
+   "valor_nm": 1.618
+  },
+  "torque_nominal_7v4_kgfcm": {
+   "valor": 5.0,
+   "unidade": "kgf.cm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-8 Rated Torque @7.4V: '5kg.cm'",
+   "tipo": "datasheet",
+   "valor_nm": 0.49
+  },
+  "torque_nominal_6v_kgfcm": {
+   "valor": 4.0,
+   "unidade": "kgf.cm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-8 Rated Torque @6V: '4kg.cm'",
+   "tipo": "datasheet",
+   "valor_nm": 0.392
+  },
+  "vel_sem_carga_7v4": {
+   "valor": {
+    "s_por_60graus": 0.192,
+    "rpm": 52
+   },
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-2 No Load Speed @7.4V: '0.192sec/60° (52RPM)'",
+   "tipo": "datasheet"
+  },
+  "vel_sem_carga_6v": {
+   "valor": {
+    "s_por_60graus": 0.238,
+    "rpm": 42
+   },
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-2 No Load Speed @6V: '0.238sec/60° (42RPM)'",
+   "tipo": "datasheet"
+  },
+  "corrente_stall_a": {
+   "valor": {
+    "7.4V": 2.5,
+    "6V": 2.0
+   },
+   "unidade": "A",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-5 Stall Current: '2.5A' @7.4V, '2a' @6V",
+   "tipo": "datasheet"
+  },
+  "corrente_nominal_a": {
+   "valor": {
+    "7.4V": 0.65,
+    "6V": 0.5
+   },
+   "unidade": "A",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-9 Rated Current: '650mA' / '500mA'",
+   "tipo": "datasheet"
+  },
+  "corrente_sem_carga_a": {
+   "valor": {
+    "7.4V": 0.15,
+    "6V": 0.13
+   },
+   "unidade": "A",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-3 Running Current (no load): '150mA' / '130mA'",
+   "tipo": "datasheet"
+  },
+  "kt_kgfcm_por_a": {
+   "valor": 8.0,
+   "unidade": "kgf.cm/A",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-11 Kt constant: '8kg.cm/A'",
+   "tipo": "datasheet"
+  },
+  "resistencia_terminal_ohm": {
+   "valor": 2.5,
+   "unidade": "ohm",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-10 Terminal resistance: '2.5ÿ' (símbolo de ohm corrompido na tradução)",
+   "tipo": "datasheet"
+  },
+  "faixa_posicao_graus": {
+   "valor": 360.0,
+   "unidade": "grau",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 7-7 Rotation angle: '360°(when 0~4096)'; 6-2 Limit Angle: 'No limit'",
+   "tipo": "datasheet"
+  },
+  "resolucao_graus": {
+   "valor": 0.088,
+   "unidade": "grau",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 7-8 Electronic resolution: '0.088°(360°/4096)'",
+   "tipo": "datasheet"
+  },
+  "encoder": {
+   "valor": "magnético absoluto 12 bits",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-6 Angle Sensor Type: '12Bits Magnetic Coding'",
+   "tipo": "datasheet"
+  },
+  "folga_graus_max": {
+   "valor": 0.5,
+   "unidade": "grau",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-11 Back Lash: 'ÿ0.5°' (o 'ÿ' é o '≦' corrompido pela tradução, como no SCS0009)",
+   "tipo": "datasheet"
+  },
+  "reducao": {
+   "valor": 345,
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-10 Gear Ratio: '1/345'",
+   "tipo": "datasheet"
+  },
+  "engrenagens": {
+   "valor": "cobre (metal)",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-4 Gear material: 'Copper'",
+   "tipo": "datasheet"
+  },
+  "material_caixa": {
+   "valor": "PA+GF",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-3 Case material: 'PA+GF'",
+   "tipo": "datasheet"
+  },
+  "rolamento": {
+   "valor": true,
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-5 Bearing type: 'Ball bearings'",
+   "tipo": "datasheet"
+  },
+  "motor": {
+   "valor": "core motor (com núcleo de ferro)",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-14 Motor: 'Core Motor'",
+   "tipo": "datasheet"
+  },
+  "carga_radial_n": {
+   "valor": null,
+   "unidade": "N",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "não publicado",
+   "tipo": "datasheet"
+  },
+  "carga_axial_n": {
+   "valor": null,
+   "unidade": "N",
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "não publicado",
+   "tipo": "datasheet"
+  },
+  "comunicacao": {
+   "valor": "TTL meio-duplex, 1 Mbps padrão, ID 0-253",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 7-2/7-3/7-4",
+   "tipo": "datasheet"
+  },
+  "conector": {
+   "valor": "5264-3P, cabo 15 cm",
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-7 Connector and Cable",
+   "tipo": "datasheet"
+  },
+  "horn_padrao": {
+   "valor": {
+    "diametro_mm": 20.0,
+    "espessura_mm": 2.5,
+    "furos_d_mm": 2.5,
+    "furos_n": 4,
+    "furos_posicao_mm": "(±4,95; ±4,95) do eixo",
+    "circulo_furos_d_mm": 14.0,
+    "horn_passivo_diametro_mm": 20.0,
+    "horn_passivo_espessura_mm": 2.1
+   },
+   "unidade": "mm",
+   "fonte": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step",
+   "item": "STS3215_03a.step (SO-ARM100): disco Ø20 em z 16,2..18,7 com 4 furos Ø2,5 em (±4,95, ±4,95); passivo Ø20 em z -17,7..-15,6. Círculo de furos = 2·√2·4,95 = 14,0 (dedução)",
+   "tipo": "referência cruzada (modelo CAD de terceiros)"
+  },
+  "horn_padrao_feetech": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf",
+   "item": "Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 10 Accessories: 'No Accessories' — a especificação não traz o horn; a avaliação Mantech cita 'metal Principal deputy servo horns' sem cotas. Conferência manual.",
+   "tipo": "datasheet"
+  },
+  "bbox_modelo_so_arm100_mm": {
+   "valor": [
+    45.4,
+    24.8,
+    39.6
+   ],
+   "unidade": "mm",
+   "fonte": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step",
+   "item": "bounding box do STEP (com horns); bate com 45,23 x 24,73 do desenho",
+   "tipo": "referência cruzada (modelo CAD de terceiros)"
+  },
+  "topo_alturas_step_mm": {
+   "valor": {
+    "origem": "centro da caixa; eixo de saída em x=+12,5; z ao longo do eixo",
+    "corpo_z": [
+     -14.4,
+     14.4
+    ],
+    "frente_topo_z": 14.4,
+    "tras_elevada": {
+     "x": [
+      -22.7,
+      7.18
+     ],
+     "y": [
+      -12.38,
+      12.38
+     ],
+     "topo_z": 15.9
+    },
+    "nervura_central": {
+     "x": [
+      -22.26,
+      3.96
+     ],
+     "y": [
+      -7.0,
+      7.0
+     ],
+     "topo_z": 17.0
+    },
+    "ressalto_eixo_d": 9.0,
+    "horn_z": [
+     16.2,
+     18.7
+    ],
+    "cabeca_parafuso_central_z": [
+     18.8,
+     20.2
+    ],
+    "horn_passivo_z": [
+     -17.7,
+     -15.6
+    ],
+    "tras_fundo_z": -15.9,
+    "rebaixo_parafusos_topo": "Ø4,2 de 15,9 até 14,4 em (4,2; ±10,25) e (−16,5; ±10,25)"
+   },
+   "unidade": "mm",
+   "fonte": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step",
+   "item": "STS3215_03a.step importado no CadQuery (2026-11-06): fatias em z e linhas verticais nos pontos citados; o chanfro de saída do molde muda x em ~0,3 entre z 14,5 e 15,9",
+   "tipo": "referência cruzada (modelo CAD de terceiros)"
+  },
+  "fundo_alturas_step_mm": {
+   "valor": {
+    "frente_fundo_z": -14.4,
+    "tras_fundo": {
+     "x": [
+      -22.7,
+      7.2
+     ],
+     "y": [
+      -12.35,
+      12.35
+     ],
+     "z": -15.9
+    },
+    "cunha": {
+     "x": [
+      -17.4,
+      -4.19
+     ],
+     "y": [
+      -9.2,
+      9.2
+     ],
+     "z": -17.7
+    },
+    "conectores": {
+     "x": [
+      -2.55,
+      -0.55
+     ],
+     "y": [
+      [
+       1.8,
+       8.6
+      ],
+      [
+       -8.6,
+       -1.8
+      ]
+     ],
+     "z_pinos": -19.4
+    },
+    "horn_passivo": {
+     "d": 20.0,
+     "z": [
+      -17.7,
+      -15.6
+     ]
+    },
+    "furos_tras": "(−20,3; ±10,25), rebaixo de −15,9 a −14,4"
+   },
+   "unidade": "mm",
+   "fonte": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step",
+   "item": "STS3215_03a.step no CadQuery (2026-11-06): fatias de z −14,2 a −19 e linhas verticais; os 2 conectores de 3 pinos saem PARA BAIXO em x −1,5",
+   "tipo": "referência cruzada (modelo CAD de terceiros)"
+  }
+ },
+ "feetech_sts3215_c018_12v": {
+  "existe": {
+   "valor": true,
+   "unidade": null,
+   "fonte": "https://openelab.io/da/products/feetech-sts3215-c018-servo-12v",
+   "item": "título: 'Feetech STS3215-C018 12V 30kg.cm TTL seriel bus servo til SO-ARM100/101'",
+   "tipo": "loja"
+  },
+  "torque_stall_12v_kgfcm": {
+   "valor": 30.0,
+   "unidade": "kgf.cm",
+   "fonte": "https://openelab.io/da/products/feetech-sts3215-c018-servo-12v",
+   "item": "título/listagem '12V 30kg.cm' (lido no resultado de busca; página não conferida)",
+   "tipo": "loja"
+  },
+  "reducao": {
+   "valor": 345,
+   "unidade": null,
+   "fonte": "https://openelab.io/da/products/feetech-sts3215-c018-servo-12v",
+   "item": "listagem cita '1/345' (resultado de busca)",
+   "tipo": "loja"
+  },
+  "datasheet_oficial": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.feetechrc.com/",
+   "item": "não encontrado no site da Feetech por robô; conferência manual",
+   "tipo": "datasheet"
+  }
+ },
+ "rolamento_6808_2rs": {
+  "designacao_skf": {
+   "valor": "61808-2RS1",
+   "unidade": null,
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "6808 = 61808 na nomenclatura SKF (série de dimensões 18; mesmo 40x52x7)",
+   "tipo": "dedução"
+  },
+  "d_mm": {
+   "valor": 40,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 278 (d 35-40 mm), linha 61808: '40 52 7'",
+   "tipo": "datasheet"
+  },
+  "D_mm": {
+   "valor": 52,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, '40 52 7'",
+   "tipo": "datasheet"
+  },
+  "B_mm": {
+   "valor": 7,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, '40 52 7'",
+   "tipo": "datasheet"
+  },
+  "r12_min_mm": {
+   "valor": 0.3,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 271/279 coluna r1,2 min: '0,3'",
+   "tipo": "datasheet"
+  },
+  "d2_aprox_mm": {
+   "valor": 42.1,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 271, linha 61808-2RS1: d2 ≈ 42,1",
+   "tipo": "datasheet"
+  },
+  "D2_aprox_mm": {
+   "valor": 49.3,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 271: D2 ≈ 49,3",
+   "tipo": "datasheet"
+  },
+  "C_kN": {
+   "valor": 4.49,
+   "unidade": "kN",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 270, linha 61808-2RS1: '52 7 4,49 3,75 0,16 – 7 500 0,034'",
+   "tipo": "datasheet"
+  },
+  "C0_kN": {
+   "valor": 3.75,
+   "unidade": "kN",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "Pu_kN": {
+   "valor": 0.16,
+   "unidade": "kN",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem (fatigue load limit)",
+   "tipo": "datasheet"
+  },
+  "rotacao_limite_rpm": {
+   "valor": 7500,
+   "unidade": "r/min",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem (limiting speed; reference speed '–' para vedação de contato)",
+   "tipo": "datasheet"
+  },
+  "massa_kg": {
+   "valor": 0.034,
+   "unidade": "kg",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "esferas_n": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "não publicado no catálogo",
+   "tipo": "datasheet"
+  },
+  "esferas_d_mm": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "não publicado no catálogo",
+   "tipo": "datasheet"
+  },
+  "nota_layout": {
+   "valor": "a linha do 61808-2RS1 aparece impressa na p. 270 (seção d 15-17 mm); os valores (da min 42, Da max 50) são de d=40 e batem com o 61808-2RZ da p. 278",
+   "unidade": null,
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "p. 270-271 e 278-279",
+   "tipo": "dedução"
+  }
+ },
+ "rolamento_608_2z": {
+  "d_mm": {
+   "valor": 8,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 264 (d 7-9 mm), linha 608-2Z: '22 7 3,45 1,37 0,057 75 000 38 000 0,013'",
+   "tipo": "datasheet"
+  },
+  "D_mm": {
+   "valor": 22,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "B_mm": {
+   "valor": 7,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "r12_min_mm": {
+   "valor": 0.3,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 265 coluna r1,2 min: '0,3'",
+   "tipo": "datasheet"
+  },
+  "d1_aprox_mm": {
+   "valor": 12.1,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 265, linha 608-2Z: d1 ≈ 12,1",
+   "tipo": "datasheet"
+  },
+  "D2_aprox_mm": {
+   "valor": 19.2,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 265: D2 ≈ 19,2",
+   "tipo": "datasheet"
+  },
+  "C_kN": {
+   "valor": 3.45,
+   "unidade": "kN",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "C0_kN": {
+   "valor": 1.37,
+   "unidade": "kN",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "Pu_kN": {
+   "valor": 0.057,
+   "unidade": "kN",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "rotacao_referencia_rpm": {
+   "valor": 75000,
+   "unidade": "r/min",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "rotacao_limite_rpm": {
+   "valor": 38000,
+   "unidade": "r/min",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "massa_kg": {
+   "valor": 0.013,
+   "unidade": "kg",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+   "tipo": "datasheet"
+  },
+  "esferas_n": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "não publicado no catálogo",
+   "tipo": "datasheet"
+  },
+  "esferas_d_mm": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "não publicado no catálogo",
+   "tipo": "datasheet"
+  },
+  "encostos_mm": {
+   "valor": {
+    "Da_max": 20.0,
+    "D2_aprox": 19.2,
+    "da_min": 10.0,
+    "da_max": 10.5
+   },
+   "unidade": "mm",
+   "fonte": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+   "item": "SKF 17000, tabela 1.1, p. 263 (Abutment and fillet dimensions), d = 8: todas as linhas com D = 22 dão D2 ≈ 19,2, Da max 20, da min 10, da max 10,5 (a coluna da max varia de 10,5 a 12 entre as variantes)",
+   "tipo": "datasheet"
+  }
+ },
+ "motor_mabuchi_fa130ra": {
+  "carcaca_diametro_mm": {
+   "valor": 20.1,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: 'ϕ20.1'",
+   "tipo": "datasheet"
+  },
+  "carcaca_faces_planas_mm": {
+   "valor": 15.1,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '15.1' entre as faces planas",
+   "tipo": "datasheet"
+  },
+  "comprimento_lata_mm": {
+   "valor": 25.0,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '25.0'",
+   "tipo": "datasheet"
+  },
+  "tampa_traseira_mm": {
+   "valor": 2.3,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '2.3'",
+   "tipo": "datasheet"
+  },
+  "comprimento_total_mm": {
+   "valor": 38.0,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '38.0' (ponta do eixo à bucha traseira)",
+   "tipo": "datasheet"
+  },
+  "eixo_diametro_mm": {
+   "valor": 2.0,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: 'ϕ2.0'",
+   "tipo": "datasheet"
+  },
+  "eixo_saliencia_mm": {
+   "valor": 9.4,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '9.4' da ponta do eixo à face da lata (inclui o ressalto de 1,7)",
+   "tipo": "datasheet"
+  },
+  "ressalto_mancal_mm": {
+   "valor": {
+    "diametro": 6.15,
+    "altura": 1.7
+   },
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: 'ϕ6.15' e '1.7'",
+   "tipo": "datasheet"
+  },
+  "bucha_traseira_mm": {
+   "valor": 3.4,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '3.4REF.'",
+   "tipo": "datasheet"
+  },
+  "terminais_distancia_mm": {
+   "valor": 8.5,
+   "unidade": "mm",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '8.5' entre (–) e (+)",
+   "tipo": "datasheet"
+  },
+  "furos_fixacao_face": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): o desenho não mostra furos roscados na face; fixar por berço/abraçadeira. Motores 130 de lançador costumam ter 2 furos M2 (o Gryphon pede 'M2 screws 4-5mm for motor mounting'), mas a distância não foi achada em datasheet: conferência manual",
+   "tipo": "datasheet"
+  },
+  "massa_g": {
+   "valor": 17,
+   "unidade": "g",
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): 'WEIGHT : 17g (APPROX)'",
+   "tipo": "datasheet"
+  },
+  "variante_18100": {
+   "valor": {
+    "tensao_nominal_v": 3.0,
+    "faixa_v": [
+     1.5,
+     3.0
+    ],
+    "rpm_sem_carga": 12300,
+    "corrente_sem_carga_a": 0.15,
+    "rpm_max_eficiencia": 9710,
+    "corrente_max_eficiencia_a": 0.56,
+    "torque_stall_mNm": 3.53,
+    "corrente_stall_a": 2.1,
+    "potencia_max_eficiencia_w": 0.76
+   },
+   "unidade": null,
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): linha 'FA-130RA-18100 1.5~3.0 3V CONSTANT 12300 0.15 9710 0.56 0.74 7.6 0.76 3.53 36 2.10'",
+   "tipo": "datasheet"
+  },
+  "variante_2270": {
+   "valor": {
+    "tensao_nominal_v": 1.5,
+    "faixa_v": [
+     1.5,
+     3.0
+    ],
+    "rpm_sem_carga": 9100,
+    "corrente_sem_carga_a": 0.2,
+    "torque_stall_mNm": 2.55,
+    "corrente_stall_a": 2.2
+   },
+   "unidade": null,
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): linha 'FA-130RA-2270 1.5~3.0 1.5V CONSTANT 9100 0.20 6990 0.66 0.59 6.0 0.43 2.55 26 2.20'",
+   "tipo": "datasheet"
+  },
+  "variante_14150": {
+   "valor": {
+    "tensao_nominal_v": 3.0,
+    "faixa_v": [
+     1.5,
+     4.5
+    ],
+    "rpm_sem_carga": 8300,
+    "corrente_sem_carga_a": 0.11,
+    "torque_stall_mNm": 2.11,
+    "corrente_stall_a": 0.9
+   },
+   "unidade": null,
+   "fonte": "https://www.pololu.com/file/0J11/fa_130ra.pdf",
+   "item": "Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): linha 'FA-130RA-14150 1.5~4.5 3V CONSTANT 8300 0.11 6150 0.31 0.55 5.6 0.35 2.11 22 0.90'",
+   "tipo": "datasheet"
+  }
+ },
+ "motor_lancador_ood_kraken_130": {
+  "rpm_sem_carga": {
+   "valor": 35000,
+   "unidade": "r/min",
+   "fonte": "https://outofdarts.com/products/ood-kraken-130-3s-neodymium-high-performance-motor",
+   "item": "resultado de busca da página da Out of Darts: '35000 RPM' (página bloqueou robô com HTTP 429: conferência manual)",
+   "tipo": "loja"
+  },
+  "torque_stall_gcm": {
+   "valor": 740,
+   "unidade": "g.cm",
+   "fonte": "https://outofdarts.com/products/ood-kraken-130-3s-neodymium-high-performance-motor",
+   "item": "idem: '740g*cm stall torque'",
+   "tipo": "loja"
+  },
+  "corrente_stall_a": {
+   "valor": 26,
+   "unidade": "A",
+   "fonte": "https://outofdarts.com/products/ood-kraken-130-3s-neodymium-high-performance-motor",
+   "item": "idem: '26A stall current'",
+   "tipo": "loja"
+  },
+  "tensao_ideal_v": {
+   "valor": 11.1,
+   "unidade": "V",
+   "fonte": "https://outofdarts.com/products/ood-kraken-130-3s-neodymium-high-performance-motor",
+   "item": "idem: 'ideal voltage of 11.1V' (3S)",
+   "tipo": "loja"
+  },
+  "formato": {
+   "valor": "130",
+   "unidade": null,
+   "fonte": "https://outofdarts.com/products/ood-kraken-130-3s-neodymium-high-performance-motor",
+   "item": "idem: '130 form factor'",
+   "tipo": "loja"
+  },
+  "dimensoes_massa": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://outofdarts.com/products/ood-kraken-130-3s-neodymium-high-performance-motor",
+   "item": "não conferido",
+   "tipo": "loja"
+  }
+ },
+ "servo_sg90_towerpro": {
+  "dim_mm": {
+   "valor": [
+    23.0,
+    12.2,
+    29.0
+   ],
+   "unidade": "mm",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "TowerPro SG90 Analog: 'Dimension: 23×12.2x29mm' (mesmo valor na SG90 Digital)",
+   "tipo": "datasheet"
+  },
+  "massa_g": {
+   "valor": 9.0,
+   "unidade": "g",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "'Weight: 9g'",
+   "tipo": "datasheet"
+  },
+  "torque_stall_kgfcm": {
+   "valor": 1.8,
+   "unidade": "kgf.cm",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "'Stall torque: 1.8kg/cm(4.8v)'",
+   "tipo": "datasheet",
+   "valor_nm": 0.177
+  },
+  "vel_analog_s_por_60": {
+   "valor": 0.12,
+   "unidade": "s/60°",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "SG90 Analog: 'Operating speed: 0.12 sec/60degree(4.8v)'",
+   "tipo": "datasheet"
+  },
+  "vel_digital_s_por_60": {
+   "valor": 0.1,
+   "unidade": "s/60°",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-7/",
+   "item": "SG90 Digital: 'Operating speed: 0.1sec/60degree(4.8v)'",
+   "tipo": "datasheet"
+  },
+  "tensao_v": {
+   "valor": 4.8,
+   "unidade": "V",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "'voltage: 4.8v'; 'Voltages from 4.8V – 6V are fine.'",
+   "tipo": "datasheet"
+  },
+  "banda_morta_us": {
+   "valor": 1,
+   "unidade": "us",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "'Dead band width: 1us'",
+   "tipo": "datasheet"
+  },
+  "cotas_abas_compilacao": {
+   "valor": {
+    "A_altura_total": 32,
+    "B_comprimento_caixa": 23,
+    "C_altura_ate_topo_caixa": 28.5,
+    "D_largura": 12,
+    "E_comprimento_com_abas": 32,
+    "F_altura_base_ate_aba": 19.5
+   },
+   "unidade": "mm",
+   "fonte": "https://www.friendlywire.com/projects/ne555-servo-safe/SG90-datasheet.pdf",
+   "item": "'SERVO MOTOR SG90 DATA SHEET' (compilação sem autor; a mesma folha diz 'Torque 2.5', 'Weight 14.7', que contradizem a TowerPro)",
+   "tipo": "loja"
+  },
+  "furos_abas_d_mm": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "não publicado pela TowerPro; conferência manual (medir)",
+   "tipo": "datasheet"
+  },
+  "furos_abas_distancia_mm": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "não publicado pela TowerPro; conferência manual",
+   "tipo": "datasheet"
+  },
+  "eixo_posicao_mm": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "não publicado pela TowerPro; conferência manual",
+   "tipo": "datasheet"
+  },
+  "estria_dentes": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.towerpro.com.tw/product/sg90-analog/",
+   "item": "não publicado pela TowerPro; conferência manual",
+   "tipo": "datasheet"
+  }
+ },
+ "dardo_nerf_elite": {
+  "massa_g": {
+   "valor": 1.02,
+   "unidade": "g",
+   "fonte": "https://blasterhub.com/?p=15312",
+   "item": "BlasterHub (BuffdaddyNerf, 2018-12-20), tabela: 'Nerf Elite | 1.02g | 2.89″' (balança AWS-100, 0,01 g, média de 2-3 amostras segundo o método do BlasterHub)",
+   "tipo": "medição publicada"
+  },
+  "comprimento_mm": {
+   "valor": 73.4,
+   "unidade": "mm",
+   "fonte": "https://blasterhub.com/?p=15312",
+   "item": "idem: '2.89″' = 73,4 mm",
+   "tipo": "medição publicada"
+  },
+  "comprimento_mm_fonte2": {
+   "valor": 70,
+   "unidade": "mm",
+   "fonte": "https://www.blastercentral.com/nerf-darts/",
+   "item": "BlasterCentral, Nerf Elite Dart: 'Length: 2.75 inches / 7 cm' (arredondado)",
+   "tipo": "medição publicada"
+  },
+  "diametro_mm": {
+   "valor": 13.0,
+   "unidade": "mm",
+   "fonte": "https://www.blastercentral.com/nerf-darts/",
+   "item": "BlasterCentral: 'Diameter: 0.5 inches / 1.3 cm' (arredondado; 0,5 in = 12,7 mm)",
+   "tipo": "medição publicada"
+  },
+  "diametro_mm_fonte2": {
+   "valor": 12.0,
+   "unidade": "mm",
+   "fonte": "https://dateks.lv/en/cenas/attistosas-un-izglitojosas-rotallietas/694850-hasbro-nerf-elite",
+   "item": "listagem citada em busca: '7.2cm (length) x 1.2cm (diameter)'",
+   "tipo": "loja"
+  },
+  "ponta": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.blastercentral.com/nerf-darts/",
+   "item": "diâmetro e forma da ponta não publicados nas fontes lidas; conferência manual (paquímetro)",
+   "tipo": "medição publicada"
+  }
+ },
+ "lancador_volante": {
+  "espacamento_motores_original_mm": {
+   "valor": 43.5,
+   "unidade": "mm",
+   "fonte": "https://reach.dog/shop/silverfoxindustries/products/nerf-rayven-open-flywheel-project-ofp-flywheel-cage",
+   "item": "Silver Fox (OFP): '43.5 mm spacing is the same spacing as the stock cages' (resultado de busca)",
+   "tipo": "loja"
+  },
+  "espacamento_motores_faixa_gryphon_mm": {
+   "valor": [
+    38.5,
+    43.5
+   ],
+   "unidade": "mm",
+   "fonte": "https://github.com/Flygonial/The-Gryphon-Foam-Dart-Blaster",
+   "item": "README do Gryphon (CC0): 'Variable motor center distances from 43.5mm to 38.5mm (Eclipse)'",
+   "tipo": "medição publicada"
+  },
+  "volante_diametro_faixa_gryphon_mm": {
+   "valor": [
+    33,
+    38
+   ],
+   "unidade": "mm",
+   "fonte": "https://github.com/Flygonial/The-Gryphon-Foam-Dart-Blaster",
+   "item": "README: 'Accepts 33 to 38mm OD flywheels (all 2mm shaft fit...)'",
+   "tipo": "medição publicada"
+  },
+  "furo_do_cano_gryphon_mm": {
+   "valor": [
+    14.0,
+    14.5,
+    15.0
+   ],
+   "unidade": "mm",
+   "fonte": "https://github.com/Flygonial/The-Gryphon-Foam-Dart-Blaster",
+   "item": "README: '14mm or 14.5mm bore flywheel cages or MAX cages, which are 15mm bore'",
+   "tipo": "medição publicada"
+  },
+  "motores_gryphon": {
+   "valor": "130 a 180, 20,4 mm, escovado",
+   "unidade": null,
+   "fonte": "https://github.com/Flygonial/The-Gryphon-Foam-Dart-Blaster",
+   "item": "README: 'Uses 130 to 180 sized 20.4mm , brushed DC motors.'",
+   "tipo": "medição publicada"
+  },
+  "volante_stryfe_original": {
+   "valor": {
+    "diametro_mm": 33.7,
+    "folga_mm": 10
+   },
+   "unidade": "mm",
+   "fonte": "https://www.tapatalk.com/groups/britnerf/demolisher-review-and-technical-notes-t1507.html",
+   "item": "BritNerf (fórum), resultado de busca: 'Stryfe Flywheel: Diameter: 33.7mm, Wall Width: 1mm, Flywheel gap: 10mm' (site respondeu 403: conferência manual)",
+   "tipo": "medição publicada"
+  },
+  "folga_definicao": {
+   "valor": "folga = espaçamento dos motores - diâmetro de raiz do volante",
+   "unidade": null,
+   "fonte": "https://www.reddit.com/r/Nerf/wiki/flywheels",
+   "item": "wiki r/Nerf (resultado de busca; reddit bloqueia robô: conferência manual); cita raiz 33,5 mm para Rapidstrike/Stryfe",
+   "tipo": "medição publicada"
+  },
+  "folga_mit_mm": {
+   "valor": 9,
+   "unidade": "mm",
+   "fonte": "https://fab.cba.mit.edu/classes/863.23/EECS/people/Sam/week13.html",
+   "item": "'the gap between the flywheels is 9mm, which we sought to replicate' (não diz se mediu)",
+   "tipo": "medição publicada"
+  },
+  "compressao_tipica_mm": {
+   "valor": [
+    2.7,
+    4.0
+   ],
+   "unidade": "mm",
+   "fonte": null,
+   "item": "dardo 12,7-13 mm menos folga 9-10 mm = 2,7-4 mm no total (≈20-30% do diâmetro)",
+   "tipo": "dedução"
+  },
+  "velocidade_stryfe_original_fps": {
+   "valor": 72,
+   "unidade": "ft/s",
+   "fonte": "https://blasterpiece.com/reviews/nerf-stryfe-blaster/",
+   "item": "'an average just under 72 feet per second' (4 pilhas AA; cronógrafo não identificado)",
+   "tipo": "medição publicada"
+  },
+  "velocidade_volante_light_command_fps": {
+   "valor": 93.7,
+   "unidade": "ft/s",
+   "fonte": "https://blasterhub.com/?p=15312",
+   "item": "BlasterHub: coluna 'Flywheel FPS' 93.7 para Nerf Elite (Dart Zone/Adventure Force Light Command, motores originais)",
+   "tipo": "medição publicada"
+  },
+  "velocidade_130_3s_fps": {
+   "valor": null,
+   "unidade": "ft/s",
+   "fonte": null,
+   "item": "não achada medição confiável de 130 em 3S; conferência manual",
+   "tipo": "medição publicada"
+  }
+ },
+ "impressora_flashforge_inventor": {
+  "volume_mm": {
+   "valor": [
+    230,
+    150,
+    160
+   ],
+   "unidade": "mm",
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "tabela 'FLashforge 3d printers parameter' (Flashforge, 2019, hospedada pela Farnell), coluna Inventor: 'Build size 230 x 150 x 160 mm'",
+   "tipo": "datasheet"
+  },
+  "extrusoras": {
+   "valor": 2,
+   "unidade": null,
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "idem: 'Extruder quantity 2'",
+   "tipo": "datasheet"
+  },
+  "bico_mm": {
+   "valor": 0.4,
+   "unidade": "mm",
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "idem: 'Nozzle diameter 0.4 mm'",
+   "tipo": "datasheet"
+  },
+  "camada_mm": {
+   "valor": [
+    0.05,
+    0.4
+   ],
+   "unidade": "mm",
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "idem: 'Layer thickness 0.05-0.4 mm'",
+   "tipo": "datasheet"
+  },
+  "precisao_impressao_mm": {
+   "valor": 0.1,
+   "unidade": "mm",
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "idem: 'Printing precision ±0.1 mm'",
+   "tipo": "datasheet"
+  },
+  "precisao_posicao_mm": {
+   "valor": {
+    "xy": 0.011,
+    "z": 0.0025
+   },
+   "unidade": "mm",
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "idem: 'X/Y axis：0.011mm Z axis：0.0025mm'",
+   "tipo": "datasheet"
+  },
+  "filamento_mm": {
+   "valor": 1.75,
+   "unidade": "mm",
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "idem: '1.75mm（±0.07mm）'",
+   "tipo": "datasheet"
+  },
+  "temp_max_bico_c": {
+   "valor": 240,
+   "unidade": "°C",
+   "fonte": "https://www.farnell.com/datasheets/2829239.pdf",
+   "item": "idem: 'Highest extruder temperature 240℃'",
+   "tipo": "datasheet"
+  },
+  "pagina_flashforge": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.flashforge.com/",
+   "item": "o Inventor original não aparece mais no site da Flashforge; conferência manual (manual impresso)",
+   "tipo": "datasheet"
+  }
+ },
+ "webcam_logitech_c920": {
+  "modelo_na_pagina": {
+   "valor": "C920s (a página da C920 redireciona para a C920s)",
+   "unidade": null,
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "título 'C920S PRO HD WEBCAM'",
+   "tipo": "datasheet"
+  },
+  "dim_com_clipe_mm": {
+   "valor": {
+    "altura": 43.3,
+    "largura": 94,
+    "profundidade": 71
+   },
+   "unidade": "mm",
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'C920s (including fixed mounting clip)' Height 43.3 mm, Width 94 mm, Depth 71 mm",
+   "tipo": "datasheet"
+  },
+  "massa_g": {
+   "valor": 162,
+   "unidade": "g",
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'Weight 162 g'",
+   "tipo": "datasheet"
+  },
+  "cabo_m": {
+   "valor": 1.5,
+   "unidade": "m",
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'C920s cable Length 1.5 m'",
+   "tipo": "datasheet"
+  },
+  "resolucao_fps": {
+   "valor": "1080p/30 fps; 720p/30 fps",
+   "unidade": null,
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'Max Resolution 1080p/30 fps - 720p/ 30fps'",
+   "tipo": "datasheet"
+  },
+  "campo_visao_diagonal_graus": {
+   "valor": 78,
+   "unidade": "grau",
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'Diagonal field of view (dFoV) 78°'",
+   "tipo": "datasheet"
+  },
+  "foco": {
+   "valor": "autofoco",
+   "unidade": null,
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'Focus type Autofocus'",
+   "tipo": "datasheet"
+  },
+  "megapixel": {
+   "valor": 3,
+   "unidade": "MP",
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'Camera mega pixel 3'",
+   "tipo": "datasheet"
+  },
+  "pronta_para_tripe": {
+   "valor": true,
+   "unidade": null,
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "Specs: 'Tripod-ready universal mounting clip fits laptops, LCD or monitors' (disclaimer 'Tripod not included')",
+   "tipo": "datasheet"
+  },
+  "rosca_tripe": {
+   "valor": "1/4\"-20",
+   "unidade": null,
+   "fonte": "https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html",
+   "item": "a Logitech não escreve a rosca; 1/4\"-20 é o padrão de tripé fotográfico",
+   "tipo": "dedução"
+  }
+ },
+ "inserto_m3_ruthex_rx_m3x5_7": {
+  "codigo_fabricante": {
+   "valor": "GE-M3x57-001",
+   "unidade": null,
+   "fonte": "https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck",
+   "item": "'Herstellernummer GE-M3x57-001'",
+   "tipo": "loja"
+  },
+  "D1_mm": {
+   "valor": 4.6,
+   "unidade": "mm",
+   "fonte": "https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck",
+   "item": "tabela: '⌀ D1 4,6' (D1 = diâmetro externo do recartilhado: dedução pelo desenho padrão da Ruthex)",
+   "tipo": "loja"
+  },
+  "D2_mm": {
+   "valor": 3.9,
+   "unidade": "mm",
+   "fonte": "https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck",
+   "item": "tabela: '⌀ D2 3,9' (diâmetro da guia de baixo: dedução)",
+   "tipo": "loja"
+  },
+  "D3_furo_recomendado_mm": {
+   "valor": 4.0,
+   "unidade": "mm",
+   "fonte": "https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck",
+   "item": "tabela: '⌀ D3 4,0' (furo recomendado: dedução; a página não define D3)",
+   "tipo": "loja"
+  },
+  "L_mm": {
+   "valor": 5.7,
+   "unidade": "mm",
+   "fonte": "https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck",
+   "item": "tabela: 'L 5,7'",
+   "tipo": "loja"
+  },
+  "parede_min_mm": {
+   "valor": 1.6,
+   "unidade": "mm",
+   "fonte": "https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck",
+   "item": "tabela: 'W (mind.) 1,6'",
+   "tipo": "loja"
+  },
+  "furo_cego_profundidade_extra_mm": {
+   "valor": 1.0,
+   "unidade": "mm",
+   "fonte": "https://www.cnckitchen.com/blog/tipps-amp-tricks-fr-gewindeeinstze-im-3d-druck-3awey",
+   "item": "CNC Kitchen: 'A blind hole should be slightly deeper than the length of the insert (approx. 1 mm).'",
+   "tipo": "medição publicada"
+  },
+  "furo_teste_cnc_kitchen_mm": {
+   "valor": [
+    4.0,
+    4.4
+   ],
+   "unidade": "mm",
+   "fonte": "https://www.cnckitchen.com/blog/tipps-amp-tricks-fr-gewindeeinstze-im-3d-druck-3awey",
+   "item": "peça de teste M3 com furos de 4,0 a 4,4 mm (faixa de teste, não recomendação)",
+   "tipo": "medição publicada"
+  },
+  "ferro_acima_temp_impressao_c": {
+   "valor": [
+    10,
+    20
+   ],
+   "unidade": "°C",
+   "fonte": "https://www.cnckitchen.com/blog/tipps-amp-tricks-fr-gewindeeinstze-im-3d-druck-3awey",
+   "item": "ferro 10-20 °C acima da temperatura de impressão (PLA ≈ 225 °C)",
+   "tipo": "medição publicada"
+  },
+  "pagina_ruthex": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.ruthex.de/",
+   "item": "ruthex.de e cnckitchen.store responderam HTTP 429: conferência manual",
+   "tipo": "datasheet"
+  }
+ },
+ "engrenagem_modulo_1_5": {
+  "z_min_sem_rebaixo_20graus": {
+   "valor": 17,
+   "unidade": "dentes",
+   "fonte": "https://khkgears.net/new/gear_knowledge/gear_technical_reference/involute_gear_profile.html",
+   "item": "KHK: 'the minimum number of teeth free of undercutting is 17' (fórmula z = 2/sin²α = 17,1)",
+   "tipo": "datasheet"
+  },
+  "z_pratico": {
+   "valor": 16,
+   "unidade": "dentes",
+   "fonte": "https://khkgears.net/new/gear_knowledge/gear_technical_reference/involute_gear_profile.html",
+   "item": "KHK: 'gears with 16 teeth or less can be usable if their strength and contact ratio pose any ill effect' (frase como está no site)",
+   "tipo": "datasheet"
+  },
+  "correcao_perfil": {
+   "valor": "positiva para z < 17",
+   "unidade": null,
+   "fonte": "https://khkgears.net/new/gear_knowledge/gear_technical_reference/involute_gear_profile.html",
+   "item": "KHK: 'a positive correction must be introduced' (exemplo de 10 dentes, 20°)",
+   "tipo": "datasheet"
+  },
+  "folga_khk_ps1_5_nylon_mm": {
+   "valor": {
+    "z15_32": [
+     0,
+     0.38
+    ],
+    "z35_65": [
+     0,
+     0.4
+    ],
+    "z70_100": [
+     0,
+     0.42
+    ]
+   },
+   "unidade": "mm",
+   "fonte": "https://mx.c.misumi-ec.com/en/book/KHK1_USA_M01/pdf/0144.pdf",
+   "item": "KHK PS1.5 (MC901, m1,5, JIS N9): coluna Backlash '0~0.38' / '0~0.40' / '0~0.42'; 'theoretical values for the backlash in the normal direction of a pair of identical gears in mesh'",
+   "tipo": "datasheet"
+  },
+  "largura_face_khk_ps1_5_mm": {
+   "valor": 15,
+   "unidade": "mm",
+   "fonte": "https://mx.c.misumi-ec.com/en/book/KHK1_USA_M01/pdf/0144.pdf",
+   "item": "KHK PS1.5: 'Face width (E) 15' (= 10 × módulo)",
+   "tipo": "datasheet"
+  },
+  "z_min_catalogo_khk_ps1_5": {
+   "valor": 15,
+   "unidade": "dentes",
+   "fonte": "https://mx.c.misumi-ec.com/en/book/KHK1_USA_M01/pdf/0144.pdf",
+   "item": "menor engrenagem da série: 'PS1.5-15'",
+   "tipo": "datasheet"
+  },
+  "aviso_plastico": {
+   "valor": "temperatura e umidade mudam diâmetro e folga; sem lubrificação, par plástico-plástico esquenta e dilata",
+   "unidade": null,
+   "fonte": "https://mx.c.misumi-ec.com/en/book/KHK1_USA_M01/pdf/0144.pdf",
+   "item": "'Significant variations in temperature or humidity can cause dimensional changes in plastic gears ... tooth diameter, and backlash'; 'using plastic gears in pairs may generate heat and dilation'",
+   "tipo": "datasheet"
+  },
+  "folga_pla_impresso_mm": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": null,
+   "item": "sem fonte técnica para PLA impresso; os números da KHK são de nylon usinado JIS N9",
+   "tipo": "dedução"
+  }
+ },
+ "esp32_s3_devkitc_1": {
+  "placa_mm": {
+   "valor": [
+    62.74,
+    25.4
+   ],
+   "unidade": "mm",
+   "fonte": "https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf",
+   "item": "desenho Espressif 'ESP32-S3-DevKitC-1' rev 1.0, 2021-03-12: cotas '62.74mm' e '25.40mm'",
+   "tipo": "datasheet"
+  },
+  "espessura_mm": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": "https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf",
+   "item": "não cotada no desenho; conferência manual",
+   "tipo": "datasheet"
+  },
+  "furos_fixacao": {
+   "valor": false,
+   "unidade": null,
+   "fonte": "https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf",
+   "item": "o desenho não mostra furos de fixação",
+   "tipo": "datasheet"
+  },
+  "usb": {
+   "valor": "2 conectores na borda curta oposta à antena: J2 'UART' (ponte USB-UART) e J4 'USB' (USB nativo)",
+   "unidade": null,
+   "fonte": "https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf",
+   "item": "desenho: rótulos 'UART' J2 e 'USB' J4 na borda de baixo",
+   "tipo": "datasheet"
+  },
+  "usb_tipo_v1_0": {
+   "valor": "Micro-USB",
+   "unidade": null,
+   "fonte": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.0.html",
+   "item": "guia v1.0: 'USB-to-UART Port: A Micro-USB port...'",
+   "tipo": "datasheet"
+  },
+  "pinos": {
+   "valor": {
+    "passo_mm": 2.54,
+    "centro_ate_borda_longa_mm": 1.27,
+    "ultimo_pino_ate_borda_usb_mm": 8.0
+   },
+   "unidade": "mm",
+   "fonte": "https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf",
+   "item": "desenho: '2.54mm', '1.27mm', '8.00mm' (a cota de 8,00 vai do último pino à borda de baixo: leitura do desenho)",
+   "tipo": "datasheet"
+  },
+  "antena": {
+   "valor": "a antena do módulo (MINI-ANT-TYPEB) passa da borda de cima da placa no desenho; saliência não cotada",
+   "unidade": null,
+   "fonte": "https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf",
+   "item": "desenho",
+   "tipo": "datasheet"
+  },
+  "massa_g": {
+   "valor": null,
+   "unidade": "g",
+   "fonte": "https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf",
+   "item": "não publicada; conferência manual",
+   "tipo": "datasheet"
+  },
+  "revisao": {
+   "valor": "conferir a revisão da placa comprada (o desenho é da v1, 2021)",
+   "unidade": null,
+   "fonte": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.0.html",
+   "item": "",
+   "tipo": "dedução"
+  }
+ },
+ "adaptador_waveshare_bus_servo_a": {
+  "placa_mm": {
+   "valor": [
+    42,
+    33
+   ],
+   "unidade": "mm",
+   "fonte": "https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A)",
+   "item": "wiki Waveshare: 'Dimensions: 42mm x 33mm'",
+   "tipo": "datasheet"
+  },
+  "furos_d_mm": {
+   "valor": 2.5,
+   "unidade": "mm",
+   "fonte": "https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A)",
+   "item": "'Mounting hole diameter: 2.5mm'",
+   "tipo": "datasheet"
+  },
+  "furos_posicoes_mm": {
+   "valor": [
+    37.0,
+    28.0
+   ],
+   "unidade": "mm",
+   "fonte": "https://www.waveshare.com/bus-servo-adapter-a.htm",
+   "item": "'Mounting hole spacing: 37.00 × 28.00mm'",
+   "tipo": "datasheet"
+  },
+  "tensao_entrada_v": {
+   "valor": [
+    9,
+    12.6
+   ],
+   "unidade": "V",
+   "fonte": "https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A)",
+   "item": "'Input voltage: 9~12.6V (should match servo voltage)' — DIVERGE do STS3215-C001 (4-7,4 V)",
+   "tipo": "datasheet"
+  },
+  "alimentacao": {
+   "valor": "P4 5,5 x 2,1 mm",
+   "unidade": null,
+   "fonte": "https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A)",
+   "item": "'Power supply interface: 5.5*2.1mm DC'",
+   "tipo": "datasheet"
+  },
+  "fe_urt_1_feetech": {
+   "valor": null,
+   "unidade": null,
+   "fonte": "https://www.feetechrc.com/",
+   "item": "desnecessário: a Waveshare passa a tensão direto aos servos (esquema). Site sem DNS para o robô em 2026-11-06",
+   "tipo": "datasheet"
+  },
+  "alimentacao_servos_direta": {
+   "valor": true,
+   "unidade": null,
+   "fonte": "https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/Bus%20Servo%20Adapter%20(A)-Sch.pdf",
+   "item": "esquema: DC_IN0 (jack DC005; borne KF350 via P-MOSFET AO4407) liga direto ao pino 2 de H3/H5 ('MAX:6A'), sem regulador; TVS SMAJ15CA",
+   "tipo": "datasheet"
+  },
+  "logica": {
+   "valor": {
+    "tensao_v": 3.3,
+    "regulador": "AMS1117-3.3",
+    "entrada": "VDDUSB (USB-C) ou buck U5 de DC_IN0 (~5,3 V; chip não identificado), juntos por B5819",
+    "meio_duplex": "SN74LVC1G125 + SN74LVC1G126",
+    "usb_uart": "CH343P"
+   },
+   "unidade": null,
+   "fonte": "https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/Bus%20Servo%20Adapter%20(A)-Sch.pdf",
+   "item": "esquema (folha única)",
+   "tipo": "datasheet"
+  }
+ },
+ "buck_xl4015_modulo": {
+  "dim_mm": {
+   "valor": [
+    51.0,
+    26.3,
+    14.0
+   ],
+   "unidade": "mm",
+   "fonte": "https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf",
+   "item": "'Size: 51x26.3x14 (LxWxH) (mm)'; desenho p. 2: '51 (mm)' × '26 (mm)'",
+   "tipo": "datasheet"
+  },
+  "entrada_v": {
+   "valor": [
+    8.0,
+    36.0
+   ],
+   "unidade": "V",
+   "fonte": "https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf",
+   "item": "'Input Voltage: 8Vdc~36Vdc.'",
+   "tipo": "datasheet"
+  },
+  "saida_v": {
+   "valor": [
+    1.25,
+    32.0
+   ],
+   "unidade": "V",
+   "fonte": "https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf",
+   "item": "'Output voltage: 1.25Vdc~32Vdc.'",
+   "tipo": "datasheet"
+  },
+  "corrente_max_a": {
+   "valor": 5.0,
+   "unidade": "A",
+   "fonte": "https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf",
+   "item": "'Output current: Adjustable maximum 5A.'",
+   "tipo": "datasheet"
+  },
+  "eficiencia_max": {
+   "valor": 0.95,
+   "unidade": null,
+   "fonte": "https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf",
+   "item": "'Conversion efficiency: 95% (the highest)'",
+   "tipo": "datasheet"
+  },
+  "bornes": {
+   "valor": "parafuso nas duas pontas curtas (entrada e saída)",
+   "unidade": null,
+   "fonte": "https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf",
+   "item": "foto da p. 2",
+   "tipo": "datasheet"
+  },
+  "furos": {
+   "valor": null,
+   "unidade": "mm",
+   "fonte": "https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf",
+   "item": "4 furos nos cantos na foto, sem cota; outras lojas dão 54 × 23 e 62 × 26 para placas parecidas: fixar por fita dupla-face num berço, e MEDIR a placa comprada",
+   "tipo": "datasheet"
+  }
+ },
+ "mosfet_ao3400a": {
+  "vds_v": {
+   "valor": 30,
+   "unidade": "V",
+   "fonte": "https://www.aosmd.com/res/datasheets/AO3400A.pdf",
+   "item": "Product Summary: 'VDS ... 30V' (Rev 3.1, July 2023)",
+   "tipo": "datasheet"
+  },
+  "id_a": {
+   "valor": 5.7,
+   "unidade": "A",
+   "fonte": "https://www.aosmd.com/res/datasheets/AO3400A.pdf",
+   "item": "'Continuous Drain Current ... TA=25°C 5.7'",
+   "tipo": "datasheet"
+  },
+  "rds_on_4v5_mohm": {
+   "valor": 32,
+   "unidade": "mΩ",
+   "fonte": "https://www.aosmd.com/res/datasheets/AO3400A.pdf",
+   "item": "'RDS(ON) (at VGS = 4.5V) < 32mΩ'",
+   "tipo": "datasheet"
+  },
+  "rds_on_2v5_mohm": {
+   "valor": 48,
+   "unidade": "mΩ",
+   "fonte": "https://www.aosmd.com/res/datasheets/AO3400A.pdf",
+   "item": "'RDS(ON) (at VGS = 2.5V) < 48mΩ'",
+   "tipo": "datasheet"
+  },
+  "encapsulamento": {
+   "valor": "SOT-23",
+   "unidade": null,
+   "fonte": "https://www.aosmd.com/res/datasheets/AO3400A.pdf",
+   "item": "'SOT23 Top View'",
+   "tipo": "datasheet"
+  }
+ },
+ "diodo_1n5819": {
+  "vrrm_v": {
+   "valor": 40,
+   "unidade": "V",
+   "fonte": "https://www.vishay.com/docs/88525/1n5817.pdf",
+   "item": "1N5819: 'Maximum repetitive peak reverse voltage VRRM ... 40'",
+   "tipo": "datasheet"
+  },
+  "if_av_a": {
+   "valor": 1.0,
+   "unidade": "A",
+   "fonte": "https://www.vishay.com/docs/88525/1n5817.pdf",
+   "item": "'IF(AV) 1.0 A'",
+   "tipo": "datasheet"
+  },
+  "ifsm_a": {
+   "valor": 25,
+   "unidade": "A",
+   "fonte": "https://www.vishay.com/docs/88525/1n5817.pdf",
+   "item": "'IFSM 25 A'",
+   "tipo": "datasheet"
+  },
+  "encapsulamento": {
+   "valor": "DO-41 (DO-204AL)",
+   "unidade": null,
+   "fonte": "https://www.vishay.com/docs/88525/1n5817.pdf",
+   "item": "'Case: DO-41 (DO-204AL)'",
+   "tipo": "datasheet"
+  }
+ },
+ "jack_dc_pj002ah": {
+  "corrente_a": {
+   "valor": 5.0,
+   "unidade": "A",
+   "fonte": "https://www.sameskydevices.com/product/resource/pj-002ah.pdf",
+   "item": "'rated input current 5.0 A'; 'rated input voltage 24 Vdc'",
+   "tipo": "datasheet"
+  },
+  "pino_central_d_mm": {
+   "valor": 2.0,
+   "unidade": "mm",
+   "fonte": "https://www.sameskydevices.com/product/resource/pj-002ah.pdf",
+   "item": "'Center Pin Ø2.0 mm' (plugue 5,5 × 2,1)",
+   "tipo": "datasheet"
+  },
+  "corpo_mm": {
+   "valor": {
+    "largura": 9.0,
+    "altura": 11.0,
+    "comprimento": 14.4,
+    "boca_d": 6.5,
+    "boca_centro_altura": 6.5,
+    "insercao_plugue": 9.5
+   },
+   "unidade": "mm",
+   "fonte": "https://www.sameskydevices.com/product/resource/pj-002ah.pdf",
+   "item": "desenho mecânico p. 2: '9.00', '11.00', '14.40', 'Ø6.50', '6.50±0.10', 'Jack Insertion Depth: 9.5 mm'",
+   "tipo": "datasheet"
+  }
+ }
+}

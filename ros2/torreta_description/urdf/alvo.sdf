@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- Alvo do rastreio (2026-11-10): um "drone" pequeno. SÓ VISUAL: com colisão, o dardo ricocheteou a 11,9 m e o ODE
+     estourou (2026-11-11). O toque é decidido pelo scripts/simular_volantes.py (caixa do corpo), que PARA o dardo ali. Quem o move é o scripts/mover_alvo.py (/world/torreta/set_pose).
+     Medidas ASSUMIDAS (o modelo do drone do Daniel é desconhecido): corpo 60 × 60 × 25 mm, 4 braços em X
+     até 160 mm de ponta a ponta, 4 hélices Ø60. Corpo laranja (marcador: contrasta com o chão cinza); hélices CINZA-ESCURO desde
+     2026-11-11: laranjas, a 2 m elas passavam na abertura 2×2 do detector e dobravam a largura medida (distância
+     pela metade); só o corpo laranja deixa a largura = 60 mm em qualquer distância. Como a maioria dos drones (ASSUMIDO) (no quarto, o fundo é outro;
+     a detecção real é medida depois, na webcam). -->
+<sdf version="1.9">
+  <model name="alvo">
+    <static>false</static>
+    <link name="corpo">
+      <gravity>false</gravity>
+      <inertial><mass>0.05</mass><inertia><ixx>2e-5</ixx><iyy>2e-5</iyy><izz>4e-5</izz></inertia></inertial>
+      <visual name="corpo">
+        <geometry><box><size>0.060 0.060 0.025</size></box></geometry>
+        <material><ambient>1.0 0.35 0.0 1</ambient><diffuse>1.0 0.35 0.0 1</diffuse></material>
+      </visual>
+      <visual name="bracos_a">
+        <pose>0 0 0 0 0 0.7854</pose>
+        <geometry><box><size>0.160 0.012 0.008</size></box></geometry>
+        <material><ambient>0.15 0.15 0.15 1</ambient><diffuse>0.15 0.15 0.15 1</diffuse></material>
+      </visual>
+      <visual name="bracos_b">
+        <pose>0 0 0 0 0 -0.7854</pose>
+        <geometry><box><size>0.160 0.012 0.008</size></box></geometry>
+        <material><ambient>0.15 0.15 0.15 1</ambient><diffuse>0.15 0.15 0.15 1</diffuse></material>
+      </visual>
+      <visual name="helice_1"><pose>0.0566 0.0566 0.010 0 0 0</pose><geometry><cylinder><radius>0.030</radius><length>0.003</length></cylinder></geometry><material><ambient>0.12 0.12 0.12 1</ambient><diffuse>0.12 0.12 0.12 1</diffuse></material></visual>
+      <visual name="helice_2"><pose>0.0566 -0.0566 0.010 0 0 0</pose><geometry><cylinder><radius>0.030</radius><length>0.003</length></cylinder></geometry><material><ambient>0.12 0.12 0.12 1</ambient><diffuse>0.12 0.12 0.12 1</diffuse></material></visual>
+      <visual name="helice_3"><pose>-0.0566 0.0566 0.010 0 0 0</pose><geometry><cylinder><radius>0.030</radius><length>0.003</length></cylinder></geometry><material><ambient>0.12 0.12 0.12 1</ambient><diffuse>0.12 0.12 0.12 1</diffuse></material></visual>
+      <visual name="helice_4"><pose>-0.0566 -0.0566 0.010 0 0 0</pose><geometry><cylinder><radius>0.030</radius><length>0.003</length></cylinder></geometry><material><ambient>0.12 0.12 0.12 1</ambient><diffuse>0.12 0.12 0.12 1</diffuse></material></visual>
+    </link>
+  </model>
+</sdf>

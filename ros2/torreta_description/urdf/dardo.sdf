@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- GERADO por cad/gerar_urdf.py: o dardo da câmara como corpo solto. Não editar à mão.
+     Malha e inércia do CAD (massa 1.02 g, medição publicada (BlasterHub: 73,4 mm, 1,02 g; BlasterCentral: 0,5")); colisão: cilindro Ø12.8 (0,1 mm abaixo do raio);
+     atrito 0.5 ASSUMIDO. O PosePublisher manda a pose do modelo (mundo) a 1 kHz em /model/dardo/pose. -->
+<sdf version="1.9">
+  <model name="dardo">
+    <link name="corpo">
+      <inertial>
+        <pose>-7.46823e-19 -2.33382e-18 9.66502e-20 0 0 0</pose>
+        <mass>0.00102</mass>
+        <inertia><ixx>2.15475e-08</ixx><ixy>-4.57055e-24</ixy><ixz>-5.89666e-26</ixz><iyy>4.68716e-07</iyy><iyz>5.08218e-25</iyz><izz>4.68716e-07</izz></inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry><mesh><uri>model://torreta_description/meshes/dardo_0.stl</uri><scale>0.001 0.001 0.001</scale></mesh></geometry>
+        <material><ambient>0.15 0.55 0.95 1</ambient><diffuse>0.15 0.55 0.95 1</diffuse></material>
+      </visual>
+      <collision name="colisao">
+        <pose>0 0 0 0 1.5707963267948966 0</pose>
+        <geometry><cylinder><radius>0.0064</radius><length>0.0734</length></cylinder></geometry>
+        <surface><friction><ode><mu>0.5</mu><mu2>0.5</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
+      <publish_link_pose>false</publish_link_pose>
+      <publish_model_pose>true</publish_model_pose>
+      <use_pose_vector_msg>false</use_pose_vector_msg>
+      <update_frequency>1000</update_frequency>
+    </plugin>
+  </model>
+</sdf>

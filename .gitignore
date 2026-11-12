@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+.pytest_cache/
+
+# colcon
+build/
+install/
+log/
+
+# Render previews written by the CAD scripts (README images live in docs/img/)
+previews/
+
+# Videos and frames written by the test scripts (README media is listed explicitly)
+midia/rastreio_*[0-9]m.mp4
+midia/quadro_*.png

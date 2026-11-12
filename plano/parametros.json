@@ -1,0 +1,1564 @@
+{
+ "escolhas": {
+  "m": 1.5,
+  "z_coroa": 40,
+  "z_pinhao": 20,
+  "folga_dente": 0.15,
+  "largura_dente": 8.0,
+  "ang_pinhao": 75.0,
+  "folga_giro": 0.5,
+  "parede": 2.4,
+  "tilt": [
+   -20.0,
+   40.0
+  ],
+  "pan": [
+   -90.0,
+   90.0
+  ],
+  "volante_d": 36.0,
+  "volante_l": 10.0,
+  "dardos_funil": 3,
+  "emp_m": 1.0,
+  "emp_z": 20,
+  "base_alt": 45.0,
+  "tampo": 6.0,
+  "servo_pan_ang": -15.0,
+  "folga_rebaixo": 0.15,
+  "coluna_alt": 21.5
+ },
+ "pecas": {
+  "sts3215": {
+   "caixa": [
+    45.23,
+    24.73,
+    35.0
+   ],
+   "eixo_dx": 12.5,
+   "horn_r": 10.0,
+   "horn_e": 2.5,
+   "horn_furos_circulo": 14.0,
+   "horn_furos_n": 4,
+   "horn_furo_d": 2.5,
+   "estria_r": 2.95,
+   "estria_d": 5.9,
+   "estria_dentes": 25,
+   "estria_saliencia": 3.4,
+   "altura_lado_eixo": 29.0,
+   "furos_cima": {
+    "origem": "centro da caixa (eixo de saída em x=+12,5)",
+    "y_mm": [
+     -10.25,
+     10.25
+    ],
+    "x_face_cima_mm": [
+     4.2,
+     -16.5
+    ],
+    "x_face_baixo_mm": [
+     4.2,
+     -20.3
+    ],
+    "furo_piloto_d_mm": 1.5,
+    "rebaixo_d_mm": 4.2
+   },
+   "torque_kgcm": 19.5,
+   "tensao": 7.4,
+   "s60": 0.192,
+   "massa_g": 55.0,
+   "torque_nominal_kgcm": 5.0,
+   "topo": {
+    "origem": "centro da caixa; eixo de saída em x=+12,5; z ao longo do eixo",
+    "corpo_z": [
+     -14.4,
+     14.4
+    ],
+    "frente_topo_z": 14.4,
+    "tras_elevada": {
+     "x": [
+      -22.7,
+      7.18
+     ],
+     "y": [
+      -12.38,
+      12.38
+     ],
+     "topo_z": 15.9
+    },
+    "nervura_central": {
+     "x": [
+      -22.26,
+      3.96
+     ],
+     "y": [
+      -7.0,
+      7.0
+     ],
+     "topo_z": 17.0
+    },
+    "ressalto_eixo_d": 9.0,
+    "horn_z": [
+     16.2,
+     18.7
+    ],
+    "cabeca_parafuso_central_z": [
+     18.8,
+     20.2
+    ],
+    "horn_passivo_z": [
+     -17.7,
+     -15.6
+    ],
+    "tras_fundo_z": -15.9,
+    "rebaixo_parafusos_topo": "Ø4,2 de 15,9 até 14,4 em (4,2; ±10,25) e (−16,5; ±10,25)"
+   },
+   "fundo": {
+    "frente_fundo_z": -14.4,
+    "tras_fundo": {
+     "x": [
+      -22.7,
+      7.2
+     ],
+     "y": [
+      -12.35,
+      12.35
+     ],
+     "z": -15.9
+    },
+    "cunha": {
+     "x": [
+      -17.4,
+      -4.19
+     ],
+     "y": [
+      -9.2,
+      9.2
+     ],
+     "z": -17.7
+    },
+    "conectores": {
+     "x": [
+      -2.55,
+      -0.55
+     ],
+     "y": [
+      [
+       1.8,
+       8.6
+      ],
+      [
+       -8.6,
+       -1.8
+      ]
+     ],
+     "z_pinos": -19.4
+    },
+    "horn_passivo": {
+     "d": 20.0,
+     "z": [
+      -17.7,
+      -15.6
+     ]
+    },
+    "furos_tras": "(−20,3; ±10,25), rebaixo de −15,9 a −14,4"
+   },
+   "fonte": "Feetech, especificação A/0 (2020-04-10), via Core Electronics; horn: STEP do SO-ARM100 (ref. cruzada)"
+  },
+  "sg90": {
+   "caixa": [
+    23.0,
+    12.2,
+    22.5
+   ],
+   "eixo_dx": 5.5,
+   "torque_kgcm": 1.8,
+   "s60": 0.12,
+   "massa_g": 9.0,
+   "fonte": "TowerPro (página do SG90); cotas das abas: compilação sem autor"
+  },
+  "motor130": {
+   "modelo": "Mabuchi FA-130RA-18100",
+   "L": 25.0,
+   "larg": 20.1,
+   "plano": 15.1,
+   "eixo_d": 2.0,
+   "rpm": 12300,
+   "tensao": 3.0,
+   "massa_g": 17,
+   "fonte": "Mabuchi FA-130RA (PDF, cópia Pololu)"
+  },
+  "r6808": {
+   "d": 40,
+   "D": 52,
+   "B": 7,
+   "massa_g": 34.0,
+   "D2": 49.3,
+   "d2": 42.1,
+   "r12": 0.3,
+   "C_kN": 4.49,
+   "C0_kN": 3.75,
+   "fonte": "SKF 61808-2RS1 (catálogo 17000)"
+  },
+  "r608": {
+   "d": 8,
+   "D": 22,
+   "B": 7,
+   "C_kN": 3.45,
+   "massa_g": 13.0,
+   "encostos": {
+    "Da_max": 20.0,
+    "D2_aprox": 19.2,
+    "da_min": 10.0,
+    "da_max": 10.5
+   },
+   "fonte": "SKF 608-2Z (catálogo 17000)"
+  },
+  "dardo": {
+   "d": 13.0,
+   "L": 73.4,
+   "massa_g": 1.02,
+   "ponta_l": 10.0,
+   "compressao": 3.35,
+   "fonte": "medição publicada (BlasterHub: 73,4 mm, 1,02 g; BlasterCentral: 0,5\")"
+  },
+  "volante_ref": {
+   "d_faixa": [
+    33,
+    38
+   ],
+   "fonte": "Gryphon (CC0) e Stryfe"
+  },
+  "webcam": {
+   "modelo": "Logitech C920",
+   "larg": 94.0,
+   "prof": 24.0,
+   "alt": 29.0,
+   "lente_r": 7.0,
+   "fov": 78,
+   "massa_g": 162,
+   "fonte": "Logitech C920s (largura 94, 162 g, 78°); corpo sem o clipe 24 × 29 ASSUMIDO (medir a sua webcam)"
+  },
+  "impressora": {
+   "mesa": [
+    230,
+    150,
+    160
+   ]
+  },
+  "esp32": {
+   "comp": 62.74,
+   "larg": 25.4,
+   "fonte": "Espressif, desenho da ESP32-S3-DevKitC-1 v1"
+  },
+  "adaptador": {
+   "comp": 42,
+   "larg": 33,
+   "fonte": "Waveshare Bus Servo Adapter (A), wiki; ATENÇÃO: entrada 9–12,6 V"
+  },
+  "inserto_m3": {
+   "furo_d": 4.0,
+   "L": 5.7,
+   "parede_min": 1.6,
+   "fundo_extra": 1.0,
+   "fonte": "Ruthex GE-M3x57-001 (3DJake) + CNC Kitchen (furo cego +1 mm)"
+  }
+ },
+ "pan": {
+  "cubo": {
+   "r": 21.0,
+   "z0": 0.0,
+   "z1": 2.0,
+   "assento_r": 20.0,
+   "assento_z1": 8.5,
+   "chanfro": 0.5,
+   "furo_r": 10.0,
+   "retencao": "ajuste no Ø40 + gota de cianoacrilato"
+  },
+  "rolamento": {
+   "z0": 2.0,
+   "z1": 9.0,
+   "r": 26.0
+  },
+  "coroa": {
+   "m": 1.5,
+   "z": 40,
+   "rp": 30.0,
+   "ra": 31.5,
+   "rf": 28.125,
+   "z0": 9.5,
+   "z1": 17.5,
+   "folga": 0.15,
+   "assento": {
+    "r0": 24.9,
+    "r1": 25.599999999999998,
+    "z0": 9.0,
+    "z1": 9.5
+   },
+   "furo_r": 10.0,
+   "insertos": {
+    "n": 4,
+    "r": 14.0,
+    "ang0": 45.0
+   }
+  },
+  "pinhao": {
+   "m": 1.5,
+   "z": 20,
+   "rp": 15.0,
+   "ra": 16.5,
+   "rf": 13.125,
+   "eixo": [
+    11.646857029613432,
+    43.466662183008076
+   ],
+   "z0": 9.5,
+   "z1": 17.5,
+   "folga": 0.15,
+   "cubo_r": 12.0,
+   "cubo_z0": 0.5,
+   "bolsa_d": 7.0,
+   "bolsa_prof": 3.5,
+   "rosca_horn": "M3",
+   "fundo_rebaixo_min": 4.5,
+   "engajamento_min": 2.0
+  },
+  "garras": {
+   "n": 6,
+   "r0": 26.0,
+   "r1": 27.825,
+   "z0": 3.0,
+   "z1": 9.5,
+   "largura_ang": 14.0,
+   "interferencia": 0.1,
+   "chanfro": 0.5
+  },
+  "coluna": {
+   "r": 18.0,
+   "z0": 17.5,
+   "z1": 39.0,
+   "furo_r": 10.0,
+   "parafusos": {
+    "rosca": "M3",
+    "L": 30,
+    "rebaixo": 3.0
+   },
+   "fendas": {
+    "larg": 14.0,
+    "alt": 8.0
+   }
+  },
+  "mesa": {
+   "x": -40.0,
+   "y": -65.0,
+   "w": 80.0,
+   "d": 164.10000000000002,
+   "r": 8.0,
+   "z0": 39.0,
+   "z1": 45.0,
+   "furo_r": 8.0,
+   "furos_cabos": {
+    "mais": {
+     "x": -5.2,
+     "y": 94.10000000000001,
+     "w": 10.0,
+     "d": 7.0
+    },
+    "menos": {
+     "x": -8.0,
+     "y": -53.5,
+     "w": 18.0,
+     "d": 6.0
+    }
+   }
+  },
+  "entre_eixos": 45.0,
+  "razao": 2.0
+ },
+ "berco": {
+  "calha": {
+   "x0": -29.0,
+   "x1": 45.400000000000006,
+   "y0": 6.6,
+   "y1": 8.6
+  },
+  "boca": {
+   "x0": 90.0,
+   "x1": 104.0
+  },
+  "piso": {
+   "x0": -95.0,
+   "x1": 104.0,
+   "y": 46.0,
+   "z0": -9.5,
+   "z1": -6.5
+  },
+  "face": {
+   "y0": 46.0,
+   "y1": 50.0,
+   "x0": -18.0,
+   "x1": 18.0,
+   "z0": -27.5,
+   "z1": 16.0
+  },
+  "volante": {
+   "r": 18.0,
+   "l": 10.0,
+   "x": 65.0,
+   "y": 22.825,
+   "folga": 9.65,
+   "compressao": 3.35
+  },
+  "gaiola": {
+   "x0": 48.400000000000006,
+   "x1": 90.0,
+   "y": 44.0,
+   "z_baixo": -6.5,
+   "z0": 6.5,
+   "esp": 3.0
+  },
+  "motor": {
+   "x": 65.0,
+   "y": 22.825,
+   "z1": -9.5,
+   "z0": -34.5
+  },
+  "funil": {
+   "n": 3,
+   "passo": 13.2
+  },
+  "empurrador": {
+   "m": 1.0,
+   "z": 20,
+   "rp": 10.0,
+   "curso": 15.5,
+   "giro_deg": 88.8084582452776,
+   "x_pinhao": -50.0,
+   "y_primitiva": 4.0
+  },
+  "webcam": {
+   "x": 76.4,
+   "suporte_x1": 85.2
+  }
+ },
+ "tilt": {
+  "z": 118,
+  "faixa": [
+   -20.0,
+   40.0
+  ],
+  "mais_baixo": -68.34224512985152
+ },
+ "bracos": {
+  "y0": 57.0,
+  "y1": 63.0,
+  "x0": -20.0,
+  "x1": 20.0,
+  "z0": 45.0,
+  "topo": 138.0,
+  "horn_e": 2.5,
+  "servo_y0": 55.9,
+  "servo_y1": 90.9,
+  "ys0": 90.9,
+  "ys1": 96.9
+ },
+ "tilt_cad": {
+  "z": 118,
+  "esp": 8.0,
+  "y_horn": 50.0,
+  "zstep_in": -12.4,
+  "mais": {
+   "y": [
+    81.10000000000001,
+    89.10000000000001
+   ]
+  },
+  "menos": {
+   "y": [
+    -65.0,
+    -57.0
+   ]
+  },
+  "x": [
+   -20.0,
+   20.0
+  ],
+  "z0": 44.0,
+  "rebaixo_mesa": 1.0,
+  "topo_r": 20.0,
+  "parafusos_mesa": {
+   "rosca": "M3",
+   "x": [
+    -12.0,
+    12.0
+   ]
+  },
+  "r608": {
+   "D": 22,
+   "B": 7,
+   "furo_encosto": 19.6
+  },
+  "janela_conectores": {
+   "x_step": [
+    -5.0,
+    2.0
+   ],
+   "y_step": [
+    -10.5,
+    10.5
+   ]
+  },
+  "parafusos_servo": "2 × PA3.0 (os de trás da tampa de baixo do servo; original ×5 + 4,5 de braço: ~×10, MEDIR)"
+ },
+ "berco_cad": {
+  "piso_furos": {
+   "motores": {
+    "d": 6.7,
+    "pontos": [
+     [
+      65.0,
+      22.825
+     ],
+     [
+      65.0,
+      -22.825
+     ]
+    ]
+   },
+   "gaiola": {
+    "d": 3.4,
+    "pontos": [
+     [
+      52.400000000000006,
+      42.0
+     ],
+     [
+      52.400000000000006,
+      -42.0
+     ],
+     [
+      86.0,
+      40.0
+     ],
+     [
+      86.0,
+      -40.0
+     ]
+    ]
+   },
+   "usb_webcam": {
+    "x": 38.0,
+    "y": -32.0,
+    "w": 18.0,
+    "d": 10.0
+   }
+  },
+  "sg90": {
+   "janela_folga": 0.2,
+   "rasgo_d": 2.4,
+   "rasgo_entre": [
+    26.0,
+    29.0
+   ],
+   "x": -55.5,
+   "y": 14.0
+  },
+  "entalhe_horn": {
+   "x": [
+    -9.0,
+    9.0
+   ],
+   "y_prof": 4.0
+  },
+  "ressaltos": {
+   "x": [
+    [
+     -18.0,
+     -10.0
+    ],
+    [
+     10.0,
+     18.0
+    ]
+   ],
+   "esp_y": 8.0,
+   "z1": 6.0,
+   "rosca": "M3"
+  },
+  "face_mais": {
+   "bolsa_d": 7.0,
+   "bolsa_prof": 2.0,
+   "horn_rosca": "M3"
+  },
+  "face_menos": {
+   "ressalto_d": 20.0,
+   "ponta_d": 10.4,
+   "ponta_l": 0.5,
+   "folga_braco": 0.5,
+   "porca_s": 13.0,
+   "porca_m": 8.0,
+   "porca_folga": 0.3,
+   "furo_m8": 8.4,
+   "arruela_d": 10.4,
+   "arruela_e": 1.5,
+   "furo_cabos": {
+    "x": -8.0,
+    "z": -14.0,
+    "w": 18.0,
+    "h": 10.0
+   }
+  },
+  "m8": "ISO 4762 M8×20 (cabeça fora do braço −y, porca travante presa no ressalto da face −y)"
+ },
+ "lancador_cad": {
+  "volante": {
+   "furo": 1.9,
+   "cubo_r": 5.0,
+   "z0": -6.0,
+   "eixo_topo": -0.09999999999999964
+  },
+  "copo": {
+   "folga": 0.15,
+   "parede": 1.6,
+   "fundo_z": -24.5,
+   "braco_e": 3.0,
+   "braco_l": 8.0,
+   "fenda": 2.0,
+   "canal_abracadeira": {
+    "z": -18.5,
+    "l": 3.0,
+    "prof": 0.8
+   }
+  },
+  "gaiola": {
+   "coluna_d": 7.2,
+   "tampa_y": 46.0,
+   "tampa_e": 3.0,
+   "parafuso": "M3×25 ISO 4762 + porca (fora da tabela da Biblioteca: conferir)"
+  },
+  "funil": {
+   "topo": 48.099999999999994,
+   "fundo_z0": 7.5,
+   "frente_z0": 8.5,
+   "esp": 2.5,
+   "fixacao": "cola cianoacrilato nos pés das paredes (ASSUMIDO)"
+  },
+  "cremalheira": {
+   "x0": -91.0,
+   "x1": -29.5,
+   "y0": -2.5,
+   "z1": 5.5,
+   "dente_z": [
+    -3.5,
+    2.5
+   ],
+   "folga_flanco": 0.075
+  },
+  "pinhao_sg90": {
+   "z": [
+    -3.5,
+    2.5
+   ],
+   "furo_d": 5.0,
+   "folga": 0.15,
+   "fixacao": "no horn do SG90 (horn não cotado pela TowerPro: furar os 2 M2 na montagem)"
+  },
+  "guia": {
+   "folga": 0.1,
+   "parede": 2.0,
+   "aba": 1.5,
+   "x1": -33.0
+  },
+  "usb_ponta": [
+   58.0,
+   -32.0,
+   14.0
+  ]
+ },
+ "webcam_cad": {
+  "perna": {
+   "w": 30.0,
+   "t": 12.0,
+   "h": 30.0
+  },
+  "aba": {
+   "w": 30.0,
+   "t": 4.0,
+   "l": 22.0
+  },
+  "dobradica": {
+   "w": 30.0,
+   "t": 8.0,
+   "h": 5.0
+  },
+  "folga_rebaixo": 0.3,
+  "borda": 2.5,
+  "base": 6.5,
+  "borda_h": 1.5,
+  "placa_e": 3.0,
+  "entalhe_usb": {
+   "x": [
+    47.400000000000006,
+    61.0
+   ],
+   "y": [
+    -36.0,
+    -28.0
+   ]
+  },
+  "rosca_x": null,
+  "parafuso_14": {
+   "cabeca_d": 11.1,
+   "cabeca_h": 3.35,
+   "furo": 6.6,
+   "folga_cabeca": 0.5,
+   "L": 7.94,
+   "nota": "1/4\"-20 × 5/16\" cabeça abaulada (medidas da cabeça ASSUMIDAS pela ASME B18.3, não lida: conferir); 3/8\" daria 6,6 de rosca e poderia bater no fundo da rosca da perna (~6, ASSUMIDO)"
+  },
+  "usb_saida": "ASSUMIDO: o cabo sai do meio da face de trás da webcam"
+ },
+ "limites": {
+  "pan": [
+   -90.0,
+   90.0
+  ],
+  "tilt": [
+   -20.0,
+   40.0
+  ]
+ },
+ "caixa": {
+  "z0": -45.0,
+  "z1": -6.0,
+  "piso": 2.4,
+  "parede": 2.4,
+  "z_piso": -42.6,
+  "colunas": {
+   "d": 10.0,
+   "c": 63.0
+  },
+  "comps": [
+   {
+    "nome": "buck 5 V (SG90)",
+    "tipo": "buck",
+    "x": [
+     -56.5,
+     -5.5
+    ],
+    "y": [
+     -61.0,
+     -34.7
+    ],
+    "z": [
+     -40.1,
+     -26.1
+    ],
+    "saida_v": 5.0,
+    "fixacao": "berço com cerca + fita dupla-face (furação não cotada)",
+    "fonte": "XL4015 Handsontec"
+   },
+   {
+    "nome": "buck 3 V (motores)",
+    "tipo": "buck",
+    "x": [
+     -56.5,
+     -5.5
+    ],
+    "y": [
+     -31.5,
+     -5.199999999999999
+    ],
+    "z": [
+     -40.1,
+     -26.1
+    ],
+    "saida_v": 3.0,
+    "fixacao": "berço com cerca + fita dupla-face (furação não cotada)",
+    "fonte": "XL4015 Handsontec"
+   },
+   {
+    "nome": "buck 7 V (servos)",
+    "tipo": "buck",
+    "x": [
+     -56.5,
+     -5.5
+    ],
+    "y": [
+     -2.0,
+     24.3
+    ],
+    "z": [
+     -40.1,
+     -26.1
+    ],
+    "saida_v": 7.0,
+    "fixacao": "berço com cerca + fita dupla-face (furação não cotada)",
+    "fonte": "XL4015 Handsontec"
+   },
+   {
+    "nome": "Waveshare Bus Servo Adapter (A)",
+    "tipo": "waveshare",
+    "x": [
+     -55.0,
+     -13.0
+    ],
+    "y": [
+     27.0,
+     60.0
+    ],
+    "z": [
+     -38.6,
+     -25.6
+    ],
+    "furos": [
+     37.0,
+     28.0
+    ],
+    "fixacao": "4 × M2 em colunas de 4 (furo piloto Ø1,6 ASSUMIDO)",
+    "fonte": "Waveshare (placa 42 × 33, furos 37 × 28); altura de 13 com o jack DC e o borne ASSUMIDA"
+   },
+   {
+    "nome": "placa perfurada (central: MOSFET, diodo, bornes, barras do ESP32)",
+    "tipo": "perfurada",
+    "x": [
+     3.0,
+     63.0
+    ],
+    "y": [
+     -48.0,
+     -2.0
+    ],
+    "z": [
+     -38.6,
+     -28.5
+    ],
+    "fixacao": "4 × M2 em colunas de 4",
+    "fonte": "ASSUMIDO: 60 × 46, a cortar"
+   },
+   {
+    "nome": "ESP32-S3-DevKitC-1",
+    "tipo": "esp32",
+    "x": [
+     3.6600000000000037,
+     66.4
+    ],
+    "y": [
+     -37.7,
+     -12.3
+    ],
+    "z": [
+     -28.5,
+     -23.4
+    ],
+    "fixacao": "nas barras fêmeas da placa perfurada",
+    "fonte": "Espressif (62,74 × 25,4); altura do módulo ASSUMIDA 3,5"
+   },
+   {
+    "nome": "jack DC PJ-002AH (12 V)",
+    "tipo": "jack",
+    "x": [
+     16.0,
+     25.0
+    ],
+    "y": [
+     -70.0,
+     -55.6
+    ],
+    "z": [
+     -36.6,
+     -25.6
+    ],
+    "boca_z": -30.1,
+    "fixacao": "berço impresso, boca rente à face de fora da parede -y",
+    "fonte": "Same Sky PJ-002AH"
+   }
+  ],
+  "aberturas": {
+   "usb_esp32": [
+    "+x",
+    -25.0,
+    -26.9,
+    22.0,
+    9.0
+   ],
+   "usb_webcam": [
+    "+x",
+    12.0,
+    -24.0,
+    18.0,
+    10.0
+   ],
+   "jack": [
+    "-y",
+    20.5,
+    -31.1,
+    9.4,
+    11.4
+   ],
+   "ventilacao_-x": [
+    "-x",
+    -18.0,
+    -30.0,
+    70.0,
+    16.0
+   ]
+  },
+  "fios": {
+   "potencia_d": 2.4,
+   "sinal_d": 1.4,
+   "servo_d": 3.0,
+   "usb_d": 4.5,
+   "z_corredor": -20.0,
+   "fonte": "ASSUMIDO: 18 AWG silicone (Ø2,4), 26 AWG (Ø1,4), cabo do servo (Ø3), USB (Ø4,5); medir"
+  },
+  "feixe_central": {
+   "r": 11.0,
+   "z": [
+    -24.0,
+    -6.0
+   ]
+  }
+ },
+ "base": {
+  "w": 140.0,
+  "r": 7.0,
+  "alt": 45.0,
+  "tampo": 6.0,
+  "parede": 2.4,
+  "cantos": 7.0,
+  "rosca_cantos": "M3"
+ },
+ "servo_pan": {
+  "eixo": [
+   11.646857029613432,
+   43.466662183008076
+  ],
+  "ang": -15.0,
+  "u": [
+   0.9659258262890683,
+   -0.25881904510252074
+  ],
+  "dz": -18.2,
+  "x_eixo_step": 12.5,
+  "folga": 0.15,
+  "parafusos": "2 × B-PA2.0 (os de trás da tampa de cima do servo, trocados por mais longos: original + 2,3 mm; MEDIR o original)",
+  "folga_topo": 0.3,
+  "folga_estatica": 0.2
+ },
+ "disparo": {
+  "rpm_sem_carga": {
+   "v": 12300,
+   "un": "rpm",
+   "tipo": "datasheet",
+   "de": "Mabuchi FA-130RA-18100 a 3 V"
+  },
+  "torque_stall": {
+   "v": 0.00353,
+   "un": "N·m",
+   "tipo": "datasheet",
+   "de": "Mabuchi FA-130RA-18100: 3,53 mN·m"
+  },
+  "densidade_pla": {
+   "v": 1.24,
+   "un": "g/cm³",
+   "tipo": "ASSUMIDO",
+   "de": "valor típico de ficha de PLA; o volante sai 100% preenchido"
+  },
+  "massa_volante": {
+   "v": 12.62166264506235,
+   "un": "g",
+   "tipo": "calculado",
+   "de": "disco maciço Ø36 × 10"
+  },
+  "inercia_volante": {
+   "v": 2.0447093485001007e-06,
+   "un": "kg·m²",
+   "tipo": "calculado",
+   "de": "½·m·r² (rotor do motor desprezado: ASSUMIDO)"
+  },
+  "tau_aceleracao": {
+   "v": 0.7460889478383733,
+   "un": "s",
+   "tipo": "calculado",
+   "de": "τ = I·ω₀ / T_stall (motor linear)"
+  },
+  "tempo_95": {
+   "v": 2.23826684351512,
+   "un": "s",
+   "tipo": "calculado",
+   "de": "95% da rotação em 3τ"
+  },
+  "vel_borda": {
+   "v": 23.18495378349267,
+   "un": "m/s",
+   "tipo": "calculado",
+   "de": "ω·r"
+  },
+  "eficiencia_velocidade": {
+   "v": 0.85,
+   "un": "",
+   "tipo": "ASSUMIDO",
+   "de": "fração da velocidade da borda que o dardo leva (escorregamento); faixa 0,75–0,95: medir com cronógrafo"
+  },
+  "vel_saida": {
+   "v": 19.70721071596877,
+   "un": "m/s",
+   "tipo": "calculado",
+   "de": "η · velocidade da borda"
+  },
+  "vel_referencia": {
+   "v": 21.945600000000002,
+   "un": "m/s",
+   "tipo": "fonte",
+   "de": "Stryfe original: 72 fps (FONTES.md, lançador de volante)"
+  },
+  "energia_dardo": {
+   "v": 0.19807081864383314,
+   "un": "J",
+   "tipo": "calculado",
+   "de": "½·m·v²"
+  },
+  "energia_volantes": {
+   "v": 3.392337407902555,
+   "un": "J",
+   "tipo": "calculado",
+   "de": "dois volantes a ω₀"
+  },
+  "eficiencia_energia": {
+   "v": 0.5,
+   "un": "",
+   "tipo": "ASSUMIDO",
+   "de": "metade da energia tirada dos volantes vira energia do dardo (o resto: escorregamento e espuma)"
+  },
+  "queda_rpm": {
+   "v": 6.019971453951944,
+   "un": "%",
+   "tipo": "calculado",
+   "de": "rotação que cai em um disparo"
+  },
+  "compressao_por_lado": {
+   "v": 1.675,
+   "un": "mm",
+   "tipo": "calculado",
+   "de": "(dardo − vão) / 2"
+  },
+  "corda_contato": {
+   "v": 15.165009066927727,
+   "un": "mm",
+   "tipo": "calculado",
+   "de": "trecho do volante que aperta o dardo"
+  },
+  "aceleracao": {
+   "v": [
+    2645.600505474076,
+    12804.94302672629
+   ],
+   "un": "m/s²",
+   "tipo": "calculado",
+   "de": "v²/(2s), s entre o comprimento do dardo e a corda de contato"
+  },
+  "forca_no_dardo": {
+   "v": [
+    2.6985125155835576,
+    13.061041887260817
+   ],
+   "un": "N",
+   "tipo": "calculado",
+   "de": "m·a (soma dos dois volantes)"
+  },
+  "atrito_espuma_pla": {
+   "v": 0.6,
+   "un": "",
+   "tipo": "ASSUMIDO",
+   "de": "coeficiente espuma × PLA não publicado: medir (plano inclinado)"
+  },
+  "normal_por_volante": {
+   "v": [
+    2.2487604296529646,
+    10.884201572717348
+   ],
+   "un": "N",
+   "tipo": "calculado",
+   "de": "F / 2 / μ"
+  },
+  "rigidez_espuma_necessaria": {
+   "v": [
+    1.3425435400913222,
+    6.498030789681999
+   ],
+   "un": "N/mm",
+   "tipo": "calculado",
+   "de": "N / compressão por lado (a espuma tem de dar pelo menos isso: medir)"
+  },
+  "forca_empurrador": {
+   "v": 17.65197,
+   "un": "N",
+   "tipo": "calculado",
+   "de": "torque de stall do SG90 / raio primitivo do pinhão"
+  },
+  "vel_empurrador": {
+   "v": 87.26646259971648,
+   "un": "mm/s",
+   "tipo": "calculado",
+   "de": "60° em 0,12 s no raio de 10 mm (sem carga)"
+  },
+  "tempo_empurrao": {
+   "v": 0.1776169164905552,
+   "un": "s",
+   "tipo": "calculado",
+   "de": "curso / velocidade"
+  },
+  "cadencia_max": {
+   "v": 2.4677110315382134,
+   "un": "tiros/s",
+   "tipo": "calculado",
+   "de": "ida e volta do empurrador + 50 ms para o dardo cair (ASSUMIDO)"
+  },
+  "cd_dardo": {
+   "v": 0.62,
+   "un": "",
+   "tipo": "ASSUMIDO",
+   "de": "faixa publicada 0,46–0,82 (simulação UAF 0,62; vídeo 0,464; cilindro 0,82)"
+  },
+  "densidade_ar": {
+   "v": 1.2,
+   "un": "kg/m³",
+   "tipo": "fonte",
+   "de": "ar a ~20 °C"
+  },
+  "k_arrasto": {
+   "v": 0.048408246800461546,
+   "un": "1/m",
+   "tipo": "calculado",
+   "de": "½·ρ·Cd·A / m"
+  },
+  "trajetoria_horizontal": {
+   "v": [
+    [
+     1.0,
+     -0.0131,
+     0.052,
+     18.78
+    ],
+    [
+     2.0,
+     -0.054,
+     0.1066,
+     17.91
+    ],
+    [
+     3.0,
+     -0.1257,
+     0.1639,
+     17.11
+    ],
+    [
+     4.0,
+     -0.2311,
+     0.224,
+     16.35
+    ],
+    [
+     5.0,
+     -0.3739,
+     0.2872,
+     15.66
+    ]
+   ],
+   "un": "(x m, z m, t s, v m/s)",
+   "tipo": "calculado",
+   "de": "integração com arrasto, tiro na horizontal"
+  },
+  "trajetoria_pontos": {
+   "v": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     19.70721071596877
+    ],
+    [
+     0.25,
+     -0.0008,
+     0.0128,
+     19.47
+    ],
+    [
+     0.5,
+     -0.0032,
+     0.0257,
+     19.24
+    ],
+    [
+     0.75,
+     -0.0073,
+     0.0388,
+     19.01
+    ],
+    [
+     1.0,
+     -0.0131,
+     0.052,
+     18.78
+    ],
+    [
+     1.25,
+     -0.0206,
+     0.0654,
+     18.56
+    ],
+    [
+     1.5,
+     -0.0299,
+     0.079,
+     18.34
+    ],
+    [
+     1.75,
+     -0.041,
+     0.0927,
+     18.13
+    ],
+    [
+     2.0,
+     -0.054,
+     0.1066,
+     17.91
+    ],
+    [
+     2.25,
+     -0.069,
+     0.1207,
+     17.71
+    ],
+    [
+     2.5,
+     -0.0858,
+     0.1349,
+     17.5
+    ],
+    [
+     2.75,
+     -0.1047,
+     0.1493,
+     17.3
+    ],
+    [
+     3.0,
+     -0.1257,
+     0.1639,
+     17.11
+    ],
+    [
+     3.25,
+     -0.1488,
+     0.1787,
+     16.91
+    ],
+    [
+     3.5,
+     -0.174,
+     0.1936,
+     16.72
+    ],
+    [
+     3.75,
+     -0.2014,
+     0.2087,
+     16.54
+    ],
+    [
+     4.0,
+     -0.2311,
+     0.224,
+     16.35
+    ],
+    [
+     4.25,
+     -0.2631,
+     0.2395,
+     16.17
+    ],
+    [
+     4.5,
+     -0.2976,
+     0.2552,
+     16.0
+    ],
+    [
+     4.75,
+     -0.3345,
+     0.2711,
+     15.83
+    ],
+    [
+     5.0,
+     -0.3739,
+     0.2872,
+     15.66
+    ],
+    [
+     5.25,
+     -0.4159,
+     0.3035,
+     15.49
+    ],
+    [
+     5.5,
+     -0.4603,
+     0.3199,
+     15.33
+    ],
+    [
+     5.75,
+     -0.5076,
+     0.3366,
+     15.17
+    ],
+    [
+     6.0,
+     -0.5577,
+     0.3535,
+     15.02
+    ]
+   ],
+   "un": "(x m, z m, t s, v m/s)",
+   "tipo": "calculado",
+   "de": "a cada 0,25 m (a figura usa)"
+  }
+ },
+ "disparo_impresso": {
+  "parede": {
+   "v": 0.8,
+   "un": "mm",
+   "tipo": "ASSUMIDO",
+   "de": "2 perímetros de 0,4 mm"
+  },
+  "ponta_tpu": {
+   "v": 10.0,
+   "un": "mm",
+   "tipo": "ASSUMIDO",
+   "de": "ponta maciça de TPU 95A (macia e pesada: CG à frente, estável)"
+  },
+  "densidade_tpu": {
+   "v": 1.22,
+   "un": "g/cm³",
+   "tipo": "ASSUMIDO",
+   "de": "valor típico de TPU 95A"
+  },
+  "massa": {
+   "v": 4.029853346305902,
+   "un": "g",
+   "tipo": "calculado",
+   "de": "tubo de PLA Ø13.0 parede 0.8 (2.41 g) + ponta de TPU (1.62 g)"
+  },
+  "massa_espuma": {
+   "v": 1.02,
+   "un": "g",
+   "tipo": "fonte",
+   "de": "dardo de espuma comercial (BlasterHub: 1,02 g)"
+  },
+  "vel_saida": {
+   "v": 19.70721071596877,
+   "un": "m/s",
+   "tipo": "ASSUMIDO",
+   "de": "mesma fração da borda da espuma (o dardo rígido escorrega diferente: medir)"
+  },
+  "energia_dardo": {
+   "v": 0.7825454424680395,
+   "un": "J",
+   "tipo": "calculado",
+   "de": "½·m·v²"
+  },
+  "energia_espuma": {
+   "v": 0.19807081864383314,
+   "un": "J",
+   "tipo": "calculado",
+   "de": "opção 1, mesma velocidade"
+  },
+  "queda_rpm": {
+   "v": 26.6079444747768,
+   "un": "%",
+   "tipo": "calculado",
+   "de": "rotação que cai em um disparo"
+  },
+  "recuperacao_1pct": {
+   "v": 2.44807439392568,
+   "un": "s",
+   "tipo": "calculado",
+   "de": "τ·ln(queda/1%) até voltar a 1% da rotação"
+  },
+  "recuperacao_1pct_espuma": {
+   "v": 1.3392912267206434,
+   "un": "s",
+   "tipo": "calculado",
+   "de": "opção 1"
+  },
+  "forca_no_dardo": {
+   "v": [
+    10.66138204997329,
+    51.60204250550937
+   ],
+   "un": "N",
+   "tipo": "calculado",
+   "de": "m·v²/(2s), mesma faixa de s da espuma"
+  },
+  "atrito_tpu_pla": {
+   "v": 0.5,
+   "un": "",
+   "tipo": "ASSUMIDO",
+   "de": "TPU × PLA não publicado: medir"
+  },
+  "normal_por_volante": {
+   "v": [
+    10.66138204997329,
+    51.60204250550937
+   ],
+   "un": "N",
+   "tipo": "calculado",
+   "de": "F / 2 / μ"
+  },
+  "modulo_tpu_95a": {
+   "v": 26.0,
+   "un": "MPa",
+   "tipo": "datasheet",
+   "de": "NinjaTek Cheetah 95A: 26 MPa (ASTM D638)"
+  },
+  "espessura_pneu": {
+   "v": 3.0,
+   "un": "mm",
+   "tipo": "ASSUMIDO",
+   "de": "banda de TPU no volante"
+  },
+  "area_contato": {
+   "v": 75.0,
+   "un": "mm²",
+   "tipo": "ASSUMIDO",
+   "de": "corda de ~15 mm × ~5 mm de largura no dardo"
+  },
+  "rigidez_pneu": {
+   "v": 650.0,
+   "un": "N/mm",
+   "tipo": "calculado",
+   "de": "E·A/t (compressão simples)"
+  },
+  "compressao_pneu": {
+   "v": [
+    0.016402126230728137,
+    0.07938775770078364
+   ],
+   "un": "mm",
+   "tipo": "calculado",
+   "de": "N / rigidez: é a interferência que o vão tem de ter"
+  },
+  "precisao_impressora": {
+   "v": 0.1,
+   "un": "mm",
+   "tipo": "fonte",
+   "de": "Flashforge Inventor ±0,1 mm (FONTES.md)"
+  },
+  "limite_rigida": {
+   "v": 0.08,
+   "un": "J",
+   "tipo": "fonte",
+   "de": "EN 71-1: ponta rígida ≤ 0,08 J (resumo QIMA)"
+  },
+  "limite_resiliente": {
+   "v": 0.5,
+   "un": "J",
+   "tipo": "fonte",
+   "de": "EN 71-1: ponta resiliente ≤ 0,5 J e ≤ 2500 J/m² (resumo QIMA)"
+  },
+  "energia_por_area": {
+   "v": 5895.667472796349,
+   "un": "J/m²",
+   "tipo": "calculado",
+   "de": "energia / área da ponta Ø13.0"
+  },
+  "energia_por_area_espuma": {
+   "v": 1492.2579819845862,
+   "un": "J/m²",
+   "tipo": "calculado",
+   "de": "opção 1"
+  },
+  "vel_max_segura": {
+   "v": 12.833014185351994,
+   "un": "m/s",
+   "tipo": "calculado",
+   "de": "maior velocidade com ponta macia que respeita 0,5 J e 2500 J/m²"
+  },
+  "vel_max_rigida": {
+   "v": 6.301085468957856,
+   "un": "m/s",
+   "tipo": "calculado",
+   "de": "se a ponta fosse rígida (0,08 J)"
+  },
+  "k_arrasto": {
+   "v": 0.012252657229259544,
+   "un": "1/m",
+   "tipo": "calculado",
+   "de": "mesmo Cd e área, massa maior"
+  }
+ },
+ "origem": {
+  "feetech_sts3215_c001.vel_sem_carga_7v4": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-2 No Load Speed @7.4V: '0.192sec/60° (52RPM)'",
+  "feetech_sts3215_c001.horn_padrao": "referência cruzada (modelo CAD de terceiros): https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step — STS3215_03a.step (SO-ARM100): disco Ø20 em z 16,2..18,7 com 4 furos Ø2,5 em (±4,95, ±4,95); passivo Ø20 em z -17,7..-15,6. Círculo de furos = 2·√2·4,95 = 14,0 (dedução)",
+  "feetech_sts3215_c001.estria": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-9 Output shaft Horn Type: '25T/OD5.9mm'; desenho: '25T 输出齿'",
+  "feetech_sts3215_c001.caixa_mm": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9 Outside Dimension: cotas 45.23 x 24.73; altura 35 (tabela 6-1: '45.2X24.7X35')",
+  "feetech_sts3215_c001.eixo_ao_centro_da_caixa_mm": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: cota '12.5' do eixo até a linha de centro da caixa; confirmado pelo STEP do SO-ARM100 (eixo em x=+12,5 com origem no centro)",
+  "feetech_sts3215_c001.estria_saida_projecao_mm": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9: cota '3.4' acima da face de cima",
+  "feetech_sts3215_c001.altura_corpo_lado_eixo_mm": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); item 9, vista lateral: cota '29' (face de cima do corpo até a face de baixo, na região do eixo)",
+  "feetech_sts3215_c001.furos_fixacao_posicoes_mm": "referência cruzada (modelo CAD de terceiros): https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step — STS3215_03a.step (SO-ARM100, Apache-2.0): faces cilíndricas de Ø1,5 e Ø4,2 nas faces z=±14,4..15,9",
+  "feetech_sts3215_c001.torque_stall_7v4_kgfcm": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-4 Stall Torque @7.4V: '19.5kg.cm'",
+  "feetech_sts3215_c001.massa_g": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 6-8 The Weight: '55±1g'",
+  "feetech_sts3215_c001.torque_nominal_7v4_kgfcm": "datasheet: https://core-electronics.com.au/attachments/uploads/sts3215-smart-servo-datasheet-translated.pdf — Feetech PRODUCT SPECIFICATION STS3215, edição A/0, 2020-04-10 (tradução automática Google, hospedada pela Core Electronics); 5-8 Rated Torque @7.4V: '5kg.cm'",
+  "feetech_sts3215_c001.topo_alturas_step_mm": "referência cruzada (modelo CAD de terceiros): https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step — STS3215_03a.step importado no CadQuery (2026-11-06): fatias em z e linhas verticais nos pontos citados; o chanfro de saída do molde muda x em ~0,3 entre z 14,5 e 15,9",
+  "feetech_sts3215_c001.fundo_alturas_step_mm": "referência cruzada (modelo CAD de terceiros): https://github.com/TheRobotStudio/SO-ARM100/blob/main/STEP/SO100/STS3215_03a.step — STS3215_03a.step no CadQuery (2026-11-06): fatias de z −14,2 a −19 e linhas verticais; os 2 conectores de 3 pinos saem PARA BAIXO em x −1,5",
+  "servo_sg90_towerpro.dim_mm": "datasheet: https://www.towerpro.com.tw/product/sg90-analog/ — TowerPro SG90 Analog: 'Dimension: 23×12.2x29mm' (mesmo valor na SG90 Digital)",
+  "servo_sg90_towerpro.cotas_abas_compilacao": "loja: https://www.friendlywire.com/projects/ne555-servo-safe/SG90-datasheet.pdf — 'SERVO MOTOR SG90 DATA SHEET' (compilação sem autor; a mesma folha diz 'Torque 2.5', 'Weight 14.7', que contradizem a TowerPro)",
+  "servo_sg90_towerpro.eixo_posicao_mm": "ASSUMIDO: eixo a ~6 mm da ponta (não publicado; medir)",
+  "servo_sg90_towerpro.torque_stall_kgfcm": "datasheet: https://www.towerpro.com.tw/product/sg90-analog/ — 'Stall torque: 1.8kg/cm(4.8v)'",
+  "servo_sg90_towerpro.vel_analog_s_por_60": "datasheet: https://www.towerpro.com.tw/product/sg90-analog/ — SG90 Analog: 'Operating speed: 0.12 sec/60degree(4.8v)'",
+  "servo_sg90_towerpro.massa_g": "datasheet: https://www.towerpro.com.tw/product/sg90-analog/ — 'Weight: 9g'",
+  "motor_mabuchi_fa130ra.variante_18100": "datasheet: https://www.pololu.com/file/0J11/fa_130ra.pdf — Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): linha 'FA-130RA-18100 1.5~3.0 3V CONSTANT 12300 0.15 9710 0.56 0.74 7.6 0.76 3.53 36 2.10'",
+  "motor_mabuchi_fa130ra.comprimento_lata_mm": "datasheet: https://www.pololu.com/file/0J11/fa_130ra.pdf — Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '25.0'",
+  "motor_mabuchi_fa130ra.carcaca_diametro_mm": "datasheet: https://www.pololu.com/file/0J11/fa_130ra.pdf — Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: 'ϕ20.1'",
+  "motor_mabuchi_fa130ra.carcaca_faces_planas_mm": "datasheet: https://www.pololu.com/file/0J11/fa_130ra.pdf — Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '15.1' entre as faces planas",
+  "motor_mabuchi_fa130ra.eixo_diametro_mm": "datasheet: https://www.pololu.com/file/0J11/fa_130ra.pdf — Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: 'ϕ2.0'",
+  "motor_mabuchi_fa130ra.massa_g": "datasheet: https://www.pololu.com/file/0J11/fa_130ra.pdf — Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): 'WEIGHT : 17g (APPROX)'",
+  "rolamento_6808_2rs.d_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 278 (d 35-40 mm), linha 61808: '40 52 7'",
+  "rolamento_6808_2rs.D_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, '40 52 7'",
+  "rolamento_6808_2rs.B_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, '40 52 7'",
+  "rolamento_6808_2rs.massa_kg": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+  "rolamento_6808_2rs.D2_aprox_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 271: D2 ≈ 49,3",
+  "rolamento_6808_2rs.d2_aprox_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 271, linha 61808-2RS1: d2 ≈ 42,1",
+  "rolamento_6808_2rs.r12_min_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 271/279 coluna r1,2 min: '0,3'",
+  "rolamento_6808_2rs.C_kN": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 270, linha 61808-2RS1: '52 7 4,49 3,75 0,16 – 7 500 0,034'",
+  "rolamento_6808_2rs.C0_kN": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+  "rolamento_608_2z.d_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, p. 264 (d 7-9 mm), linha 608-2Z: '22 7 3,45 1,37 0,057 75 000 38 000 0,013'",
+  "rolamento_608_2z.D_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+  "rolamento_608_2z.B_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+  "rolamento_608_2z.C_kN": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+  "rolamento_608_2z.massa_kg": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF Rolling bearings (PUB BU/P1 17000/1 EN), tabela 1.1 Single row deep groove ball bearings, idem",
+  "rolamento_608_2z.encostos_mm": "datasheet: https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf — SKF 17000, tabela 1.1, p. 263 (Abutment and fillet dimensions), d = 8: todas as linhas com D = 22 dão D2 ≈ 19,2, Da max 20, da min 10, da max 10,5 (a coluna da max varia de 10,5 a 12 entre as variantes)",
+  "lancador_volante.compressao_tipica_mm": "dedução: None — dardo 12,7-13 mm menos folga 9-10 mm = 2,7-4 mm no total (≈20-30% do diâmetro)",
+  "dardo_nerf_elite.diametro_mm": "medição publicada: https://www.blastercentral.com/nerf-darts/ — BlasterCentral: 'Diameter: 0.5 inches / 1.3 cm' (arredondado; 0,5 in = 12,7 mm)",
+  "dardo_nerf_elite.comprimento_mm": "medição publicada: https://blasterhub.com/?p=15312 — idem: '2.89″' = 73,4 mm",
+  "dardo_nerf_elite.massa_g": "medição publicada: https://blasterhub.com/?p=15312 — BlasterHub (BuffdaddyNerf, 2018-12-20), tabela: 'Nerf Elite | 1.02g | 2.89″' (balança AWS-100, 0,01 g, média de 2-3 amostras segundo o método do BlasterHub)",
+  "dardo_nerf_elite.ponta": "ASSUMIDO: ponta de ~10 mm (medir com paquímetro)",
+  "dardo.compressao": "meio da faixa 2,7–4,0 mm (dedução do subagente sobre projetos abertos)",
+  "lancador_volante.volante_diametro_faixa_gryphon_mm": "medição publicada: https://github.com/Flygonial/The-Gryphon-Foam-Dart-Blaster — README: 'Accepts 33 to 38mm OD flywheels (all 2mm shaft fit...)'",
+  "webcam_logitech_c920.campo_visao_diagonal_graus": "datasheet: https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html — Specs: 'Diagonal field of view (dFoV) 78°'",
+  "webcam_logitech_c920.massa_g": "datasheet: https://www.logitech.com/en-za/products/webcams/c920-pro-hd-webcam.html — Specs: 'Weight 162 g'",
+  "webcam.corpo": "ASSUMIDO: a página só dá as medidas COM o clipe (94 × 71 × 43,3)",
+  "impressora_flashforge_inventor.volume_mm": "datasheet: https://www.farnell.com/datasheets/2829239.pdf — tabela 'FLashforge 3d printers parameter' (Flashforge, 2019, hospedada pela Farnell), coluna Inventor: 'Build size 230 x 150 x 160 mm'",
+  "esp32_s3_devkitc_1.placa_mm": "datasheet: https://dl.espressif.com/dl/DXF_ESP32-S3-DevKitC-1_V1_20210312CB.pdf — desenho Espressif 'ESP32-S3-DevKitC-1' rev 1.0, 2021-03-12: cotas '62.74mm' e '25.40mm'",
+  "adaptador_waveshare_bus_servo_a.placa_mm": "datasheet: https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A) — wiki Waveshare: 'Dimensions: 42mm x 33mm'",
+  "inserto_m3_ruthex_rx_m3x5_7.D3_furo_recomendado_mm": "loja: https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck — tabela: '⌀ D3 4,0' (furo recomendado: dedução; a página não define D3)",
+  "inserto_m3_ruthex_rx_m3x5_7.L_mm": "loja: https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck — tabela: 'L 5,7'",
+  "inserto_m3_ruthex_rx_m3x5_7.parede_min_mm": "loja: https://www.3djake.ch/de-CH/ruthex/gewindeeinsatz-m3-100-stueck — tabela: 'W (mind.) 1,6'",
+  "inserto_m3_ruthex_rx_m3x5_7.furo_cego_profundidade_extra_mm": "medição publicada: https://www.cnckitchen.com/blog/tipps-amp-tricks-fr-gewindeeinstze-im-3d-druck-3awey — CNC Kitchen: 'A blind hole should be slightly deeper than the length of the insert (approx. 1 mm).'",
+  "motor_mabuchi_fa130ra.eixo_saliencia_mm": "datasheet: https://www.pololu.com/file/0J11/fa_130ra.pdf — Mabuchi FA-130RA (PDF da Mabuchi, 2005, cópia hospedada pela Pololu): desenho: '9.4' da ponta do eixo à face da lata (inclui o ressalto de 1,7)",
+  "buck_xl4015_modulo.dim_mm": "datasheet: https://www.handsontec.com/dataspecs/module/XL4015-5A-PS.pdf — 'Size: 51x26.3x14 (LxWxH) (mm)'; desenho p. 2: '51 (mm)' × '26 (mm)'",
+  "jack_dc_pj002ah.corpo_mm": "datasheet: https://www.sameskydevices.com/product/resource/pj-002ah.pdf — desenho mecânico p. 2: '9.00', '11.00', '14.40', 'Ø6.50', '6.50±0.10', 'Jack Insertion Depth: 9.5 mm'"
+ }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!-- Mundo do RASTREIO (2026-11-10): o worlds/torreta.sdf + o sistema de sensores (ogre2), que a
+     webcam simulada precisa. Mudou algo no torreta.sdf? Mude aqui também (o testar_rastreio.sh confere).
+     Mundo da torreta. Base: empty.sdf do gz-sim 8 (física, comandos, cena, contato, sol, chão).
+     Física DART (a padrão). Medido em 2026-11-09 (diagnóstico na ficha, seção 7):
+       - Bullet-Featherstone + a mimic do gz_ros2_control: as duas restrições brigam e o motor
+         do pan anda 0,01 rad/s; o volante não passa de 0,02 rad/s;
+       - Bullet sozinho: teto de 100 rad/s por junta (o motor 130 vai a 1 288 rad/s) e o
+         SG90 trava (mimic revoluta -> prismática);
+       - DART: não faz a mimic na física; quem a faz é o gz_ros2_control (comando de velocidade
+         na junta movida, a partir do erro de posição), e pan, volantes e cremalheira seguem.
+     Passo de 1 ms (ASSUMIDO, o do braço). O dardo (urdf/dardo.sdf) nasce pelo launch. -->
+<sdf version="1.9">
+  <world name="torreta">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+    <!-- Força num link por um passo (/world/torreta/wrench): é por aqui que o scripts/simular_volantes.py
+         faz o papel do atrito volante-espuma, que o Gazebo não simula (2026-11-10). -->
+    <plugin filename="gz-sim-apply-link-wrench-system" name="gz::sim::systems::ApplyLinkWrench"/>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

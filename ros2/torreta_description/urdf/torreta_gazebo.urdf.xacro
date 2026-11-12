@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!-- A torreta no Gazebo: o torreta.urdf (gerado do CAD) + ros2_control + o plugin.
+     Conferido pelo cad/gerar_urdf.py (o bloco ros2_control cobre exatamente as juntas
+     comandadas; mimic só com estado). -->
+<robot name="torreta" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:arg name="controladores" default="$(find torreta_description)/config/controladores.yaml"/>
+
+  <!-- urdf:=torreta_video.urdf no vídeo (mesma física, só visual diferente; ver cad/gerar_urdf.py) -->
+  <xacro:arg name="urdf" default="torreta.urdf"/>
+  <xacro:include filename="$(arg urdf)"/>
+
+  <!-- Comando no MOTOR, como no hardware (Daniel, 2026-11-09):
+       - os dois STS3215 (pan_motor, tilt) e o SG90 em POSIÇÃO: é o modo padrão desses servos;
+       - o motor 130 em VELOCIDADE: no real é PWM num MOSFET; aqui a velocidade
+         do eixo é a grandeza que importa para o dardo.
+       Estado com ESFORÇO, para medir o torque contra a gravidade.
+       As juntas mimic (pan, volante_espelho, cremalheira) só têm estado: quem as move é o
+       próprio gz_ros2_control, pela tag <mimic> do torreta.urdf (no DART; ver worlds/torreta.sdf). -->
+  <ros2_control name="torreta_gazebo" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+    <joint name="pan_motor">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="tilt">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="sg90">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="volante_motor">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="pan">
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="volante_espelho">
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="cremalheira">
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(arg controladores)</parameters>
+    </plugin>
+    <!-- Pose de cada link a 1 kHz em /model/torreta/pose (Pose_V): o scripts/simular_volantes.py
+         precisa do berço (onde estão os volantes) para saber quando o dardo chega neles. -->
+    <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
+      <publish_link_pose>true</publish_link_pose>
+      <publish_nested_model_pose>false</publish_nested_model_pose>
+      <use_pose_vector_msg>true</use_pose_vector_msg>
+      <update_frequency>1000</update_frequency>
+    </plugin>
+  </gazebo>
+
+  <!-- Webcam simulada (2026-11-10), SÓ com webcam:=true (launch/rastreio.launch.py): renderizar a câmera
+       custa caro sem placa de vídeo, então o Gazebo comum não a carrega.
+       - Posição: centro da face da lente no CAD (cad/webcam.py, webcam_ref()["lente"], frame do berço):
+         x 90,0 mm (face da frente), y 0, z 47,5 mm. Conferido pelo cad/gerar_urdf.py (verificação 7).
+       - Campo de visão: C920s, 78° na DIAGONAL (fontes/FONTES.md, seção 7). Em 16:9, o horizontal é
+         2·atan(tan(39°)·16/√(16²+9²)) = 70,4° = 1,2289 rad; o vertical sai sozinho, 43,3°.
+       - 640 × 360 a 30 Hz: ASSUMIDO (a C920s grava 1280 × 720 a 30 fps; metade da resolução, mesmo campo
+         de visão, porque sem GPU a renderização a 720p deixa a simulação lenta). Lente sem distorção.
+       - webcam_link: x para a frente (convenção do Gazebo, onde a câmera olha +x).
+         webcam_optico: z para a frente, x para a direita, y para baixo (convenção ROS das imagens,
+         REP 103); é o frame_id das mensagens /webcam/image_raw e /webcam/camera_info. -->
+  <xacro:arg name="webcam" default="false"/>
+  <xacro:if value="$(arg webcam)">
+    <link name="webcam_link"/>
+    <joint name="webcam_fixa" type="fixed">
+      <parent link="berco"/>
+      <child link="webcam_link"/>
+      <origin xyz="0.0900 0 0.0475" rpy="0 0 0"/>
+    </joint>
+    <link name="webcam_optico"/>
+    <joint name="webcam_otica" type="fixed">
+      <parent link="webcam_link"/>
+      <child link="webcam_optico"/>
+      <origin xyz="0 0 0" rpy="-1.5707963 0 -1.5707963"/>
+    </joint>
+    <gazebo reference="webcam_link">
+      <sensor name="webcam" type="camera">
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <topic>/webcam/image_raw</topic>
+        <gz_frame_id>webcam_optico</gz_frame_id>
+        <camera>
+          <camera_info_topic>/webcam/camera_info</camera_info_topic>
+          <horizontal_fov>1.2289</horizontal_fov>
+          <image><width>640</width><height>360</height><format>R8G8B8</format></image>
+          <clip><near>0.02</near><far>50</far></clip>
+        </camera>
+      </sensor>
+    </gazebo>
+  </xacro:if>
+
+</robot>

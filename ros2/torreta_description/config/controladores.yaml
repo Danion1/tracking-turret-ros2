@@ -1,0 +1,50 @@
+# Controladores da torreta no Gazebo (nomes das juntas copiados do torreta.urdf).
+# Quem MANDA nos controladores é o nó do Daniel (rastreio e disparo); aqui só se diz
+# que tipo de controlador existe e quais juntas cada um comanda.
+controller_manager:
+  ros__parameters:
+    # 1000 Hz = o passo da física (1 ms). A mimic do gz_ros2_control corre atrás da junta do motor
+    # com UM ciclo de atraso (medido: 10 ms a 100 Hz); a 1000 Hz, o atraso é de 1 ms.
+    update_rate: 1000 # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # pan e tilt juntos: o rastreio manda os dois ao mesmo tempo
+    pan_tilt_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    # o gatilho: SG90 -> pinhão -> cremalheira (a cremalheira segue pela mimic)
+    gatilho_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    # os volantes: velocidade do motor 130 +y (rad/s); o -y segue pela mimic
+    volantes_controller:
+      type: forward_command_controller/ForwardCommandController
+
+pan_tilt_controller:
+  ros__parameters:
+    joints:
+      - pan_motor
+      - tilt
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+gatilho_controller:
+  ros__parameters:
+    joints:
+      - sg90
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+volantes_controller:
+  ros__parameters:
+    joints:
+      - volante_motor
+    interface_name: velocity
