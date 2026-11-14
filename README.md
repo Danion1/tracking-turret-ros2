@@ -27,6 +27,12 @@ Every mechanism moves as a real joint, driven only through its motor: 20T pinion
 
 Videos: [tracking + shot, real time](midia/rastreio_tiro_tempo_real.mp4) · [same shot, 8× slow motion](midia/rastreio_tiro.mp4) · [mechanisms, 24 s](midia/torreta.mp4). They are rendered by simulated cameras in lockstep with the physics, so they play smoothly even though the simulation ran on a CPU-only WSL2 machine.
 
+### Mechanisms up close
+
+![Fusion 360 kinematic animation: the 20T pinion turning the 40T pan ring, the tilt, both flywheels and the rack-and-pinion pusher, each shown close up and then all together](midia/torreta_fusion.gif)
+
+A kinematic animation in Fusion 360 (joints + motion links), so each gear and mechanism can be seen turning up close. It is **not** a physics test: it shows the geometry and the ratios. The ratios measured in Fusion match the URDF (pinion/ring −2.000, flywheels −1, rack 10.000 mm/rad), and the teeth do not collide at 5 pan poses and 3 rack poses. The physics (motors, contacts, the dart) is in the Gazebo recordings above. [Video, 18 s](midia/torreta_fusion.mp4).
+
 **Status:** Simulated only. CAD designed for fabrication, not printed yet. The mechanisms (gear ratios, signs, lag), the dart launch and the tracking are measured in Gazebo (numbers below). Detection on the real webcam, motion prediction (Kalman) and automatic firing are not done yet: see [Next steps](#next-steps).
 
 *Developed in a private workspace (Nov 5–11, 2026); this repository is the cleaned public release. CI builds the ROS 2 packages and runs their tests on every push.*

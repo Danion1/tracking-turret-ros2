@@ -27,6 +27,12 @@ Cada mecanismo se move como junta de verdade, comandado só pelo seu motor: pinh
 
 Vídeos: [rastreio + tiro, tempo real](midia/rastreio_tiro_tempo_real.mp4) · [mesmo tiro, 8× mais lento](midia/rastreio_tiro.mp4) · [mecanismos, 24 s](midia/torreta.mp4). São gravados por câmeras simuladas em sincronia com a física, então rodam lisos mesmo com a simulação feita num WSL2 só com CPU.
 
+### Mecanismos de perto
+
+![Animação cinemática no Fusion 360: o pinhão de 20 dentes girando a coroa de 40 do pan, o tilt, os dois volantes e o empurrador de cremalheira, cada um de perto e depois todos juntos](midia/torreta_fusion.gif)
+
+Animação cinemática no Fusion 360 (juntas + motion links), para ver de perto cada engrenagem e cada mecanismo girando. **Não** é teste de física: mostra a geometria e as relações. As relações medidas no Fusion conferem com o URDF (pinhão/coroa −2,000, volantes −1, cremalheira 10,000 mm/rad), e os dentes não colidem em 5 poses do pan e em 3 da cremalheira. A física (motores, contatos, o dardo) está nas gravações do Gazebo acima. [Vídeo, 18 s](midia/torreta_fusion.mp4).
+
 **Estado:** só simulado. CAD pronto para fabricar, ainda não impresso. Os mecanismos (razões, sinais, atraso), o lançamento do dardo e o rastreio estão medidos no Gazebo (números abaixo). Detecção na webcam real, previsão de movimento (Kalman) e disparo automático ainda não foram feitos: ver [Próximos passos](#próximos-passos).
 
 *Desenvolvido num espaço de trabalho privado (5 a 11 de nov. de 2026); este repositório é a versão pública limpa. O CI compila os pacotes ROS 2 e roda os testes a cada push.*
